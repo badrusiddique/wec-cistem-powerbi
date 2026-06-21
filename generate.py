@@ -607,7 +607,7 @@ def gen_pbip():
                 "version": "1.0",
                 "artifacts": [{"report": {"path": f"{NAME}.Report"}}],
                 "settings": {"enableAutoRecovery": True}})
-    write(os.path.join(ROOT, ".gitignore"), "**/.pbi/localSettings.json\n**/.pbi/cache.abf\n")
+    # NOTE: .gitignore is a repo-maintained file (not generated) so regen stays non-destructive.
 
 # Professional theme — baked into the report (StaticResources) AND written to root for manual load.
 TEAL, TEAL_D, INK, MUTE, LINE, BG_SOFT = "#0E5E5E", "#0A4A4A", "#1F2A30", "#51606B", "#D5E0E0", "#F2F6F6"
