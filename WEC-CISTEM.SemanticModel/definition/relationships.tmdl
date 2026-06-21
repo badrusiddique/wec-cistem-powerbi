@@ -1,0 +1,80 @@
+relationship 8c02d76a-7cdf-50ac-9985-128a40af39e7
+	fromColumn: ClientPhones.ClientID
+	toColumn: Clients.Primary_ID
+
+relationship 0714fdff-d8c5-5ee3-a3c5-ab429f9c9008
+	fromColumn: AdditionalEmails.ClientID
+	toColumn: Clients.Primary_ID
+
+relationship 9348e327-5a06-5a28-b9c8-113767fa3fff
+	fromColumn: BLIS.ClientID
+	toColumn: Clients.Primary_ID
+
+relationship f751e1b7-d7ae-5676-80ae-fe0ee830f283
+	fromColumn: LinkedCompanies.ClientID
+	toColumn: Clients.Primary_ID
+
+relationship 320ab444-5541-52e3-8ed7-6232facb5304
+	fromColumn: Locations.ClientID
+	toColumn: Clients.Primary_ID
+
+relationship 5102594d-470a-5934-94b0-4d78d8d56566
+	fromColumn: ClientServices.SPrimary_ID
+	toColumn: Clients.Primary_ID
+
+relationship c7e47c8e-2c3d-5035-af1a-a7c2f58a156b
+	fromColumn: ContactTracking.BPrimary__ID
+	toColumn: Clients.Primary_ID
+
+relationship 24e0f29c-ca26-57d6-b99f-5166667a7bea
+	fromColumn: Loans.LPrimary_ID
+	toColumn: Clients.Primary_ID
+
+relationship e39d3ee7-8212-5fed-98f9-1ad02d389a6d
+	fromColumn: SARI_Assessment.Primary_ID
+	toColumn: Clients.Primary_ID
+
+relationship f65cc82a-f596-58a7-b1c5-85b706083d75
+	fromColumn: SARI_Financials.Primary_ID
+	toColumn: Clients.Primary_ID
+
+relationship f59a312b-0bb4-5874-86d8-d37876c14baa
+	fromColumn: FSReceived.LPrimaryID
+	toColumn: Clients.Primary_ID
+
+relationship 0f016bb9-5988-5aa5-8ae3-b6aca5fd9117
+	fromColumn: PersonalProfiles.Primary_ID
+	toColumn: Clients.Primary_ID
+
+relationship cabc63db-6733-5643-8b6a-2621b8feeb17
+	fromColumn: Shareholders.Primary_ID
+	toColumn: Clients.Primary_ID
+
+relationship bde7cd93-aa53-50a7-9fec-35c11c3ecf76
+	fromColumn: Impact.primaryid
+	toColumn: Clients.Primary_ID
+
+relationship 8f53d464-43f2-5fbe-aaf6-78c4dee5b738
+	fromColumn: MentorMatches.ClientID
+	toColumn: Clients.Primary_ID
+
+relationship f51c3eaf-6904-570b-9545-39e0592bca18
+	fromColumn: MenteeMatches.ClientID
+	toColumn: Clients.Primary_ID
+
+relationship cd0b107e-9dd3-5896-b7a4-b9fda12e18b8
+	fromColumn: TrainingReg.ClientID
+	toColumn: Clients.Primary_ID
+
+relationship a51d41e4-dd44-5383-90f6-b3f3e008c199
+	fromColumn: TrainingReg.TrainingID
+	toColumn: Training.TrainingID
+
+relationship b3d655a9-4482-568b-9091-cc3a9cb51016
+	fromColumn: Clients.SourceID
+	toColumn: Source.SID
+
+relationship 9894740b-b7a8-5f2c-ab8f-24ff02a470de
+	fromColumn: Clients.ReferralID
+	toColumn: Referral.ID
+

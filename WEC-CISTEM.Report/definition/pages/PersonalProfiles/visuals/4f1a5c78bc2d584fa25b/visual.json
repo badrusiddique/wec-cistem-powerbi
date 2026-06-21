@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "4f1a5c78bc2d584fa25b",
+  "position": {
+    "x": 8,
+    "y": 474,
+    "z": 12,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 12
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Spouse_Name"
+                }
+              },
+              "queryRef": "Clients.Spouse_Name",
+              "nativeQueryRef": "Spouse_Name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Contact_Date"
+                }
+              },
+              "queryRef": "Clients.Contact_Date",
+              "nativeQueryRef": "Contact_Date"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Family'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

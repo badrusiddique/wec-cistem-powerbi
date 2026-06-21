@@ -1,0 +1,85 @@
+table SARI_Assessment
+	lineageTag: a54e08e7-d2c5-558c-87af-6d82d79b1fdf
+
+	column ID
+		dataType: int64
+		isHidden
+		lineageTag: f9dabc98-ddbc-57ca-a3b9-bba472bb95f9
+		summarizeBy: none
+		sourceColumn: ID
+
+	column Primary_ID
+		dataType: int64
+		isHidden
+		lineageTag: 540e19dc-d156-59b9-a1b9-cdf60d040ad2
+		summarizeBy: none
+		sourceColumn: Primary_ID
+
+	column RptDate
+		dataType: dateTime
+		lineageTag: 73c6ee61-377d-5a84-86d7-d39b341dc77d
+		summarizeBy: none
+		sourceColumn: RptDate
+
+	column Industry
+		dataType: int64
+		lineageTag: 84239306-9b31-5280-ab45-a19b4d518288
+		summarizeBy: none
+		sourceColumn: Industry
+
+	column MarketDemand
+		dataType: int64
+		lineageTag: fb5f9c29-4353-5400-9ef5-b76e8e5ca5aa
+		summarizeBy: none
+		sourceColumn: MarketDemand
+
+	column MgmtAndCreditHistory
+		dataType: int64
+		lineageTag: 668e0e57-da27-5b72-9579-8607f4f96e93
+		summarizeBy: none
+		sourceColumn: MgmtAndCreditHistory
+
+	column Fin_Startup
+		dataType: int64
+		lineageTag: e85bd1df-bb44-5ff9-b807-34e4adb625b1
+		summarizeBy: none
+		sourceColumn: Fin_Startup
+
+	column Fin_Exist
+		dataType: int64
+		lineageTag: 011fb198-6528-56c2-ad43-3890a4fe3cc0
+		summarizeBy: none
+		sourceColumn: Fin_Exist
+
+	column AssessDate
+		dataType: dateTime
+		lineageTag: a802c760-8495-50d9-92f5-80696dffbe80
+		summarizeBy: none
+		sourceColumn: AssessDate
+
+	column Notes
+		dataType: string
+		lineageTag: 513835dc-c9c9-581f-8340-33ee33ad8866
+		summarizeBy: none
+		sourceColumn: Notes
+
+	partition SARI_Assessment = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"ID" = Int64.Type, #"Primary_ID" = Int64.Type, #"RptDate" = date, #"Industry" = Int64.Type, #"MarketDemand" = Int64.Type, #"MgmtAndCreditHistory" = Int64.Type, #"Fin_Startup" = Int64.Type, #"Fin_Exist" = Int64.Type, #"AssessDate" = date, #"Notes" = text],
+			        {
+			                    {1, 101, #date(2023,1,1), 1, 1, 1, 1, 1, #date(2023,1,1), "Sample note 1"},
+			                    {2, 102, #date(2024,2,2), 3, 3, 3, 3, 3, #date(2024,2,2), "Sample note 2"},
+			                    {3, 103, #date(2023,3,3), 5, 5, 5, 5, 5, #date(2023,3,3), "Sample note 3"},
+			                    {4, 104, #date(2024,4,4), 2, 2, 2, 2, 2, #date(2024,4,4), "Sample note 4"},
+			                    {5, 105, #date(2023,5,5), 4, 4, 4, 4, 4, #date(2023,5,5), "Sample note 5"},
+			                    {6, 106, #date(2024,6,6), 1, 1, 1, 1, 1, #date(2024,6,6), "Sample note 6"},
+			                    {7, 107, #date(2023,7,7), 3, 3, 3, 3, 3, #date(2023,7,7), "Sample note 7"},
+			                    {8, 108, #date(2024,8,8), 5, 5, 5, 5, 5, #date(2024,8,8), "Sample note 8"}
+			        }
+			    )
+			in
+			    Source
+

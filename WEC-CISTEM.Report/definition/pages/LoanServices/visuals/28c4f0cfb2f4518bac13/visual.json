@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "28c4f0cfb2f4518bac13",
+  "position": {
+    "x": 645,
+    "y": 262,
+    "z": 7,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "LP_WorkingCapital_Amnt"
+                }
+              },
+              "queryRef": "Loans.LP_WorkingCapital_Amnt",
+              "nativeQueryRef": "LP_WorkingCapital_Amnt"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "LP_Equipment_Amnt"
+                }
+              },
+              "queryRef": "Loans.LP_Equipment_Amnt",
+              "nativeQueryRef": "LP_Equipment_Amnt"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "LP_Leaseholds_Amnt"
+                }
+              },
+              "queryRef": "Loans.LP_Leaseholds_Amnt",
+              "nativeQueryRef": "LP_Leaseholds_Amnt"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "LP_Inventory_Amnt"
+                }
+              },
+              "queryRef": "Loans.LP_Inventory_Amnt",
+              "nativeQueryRef": "LP_Inventory_Amnt"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "LP_BusinessPurchase_Amnt"
+                }
+              },
+              "queryRef": "Loans.LP_BusinessPurchase_Amnt",
+              "nativeQueryRef": "LP_BusinessPurchase_Amnt"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Loan Purpose'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "7c65dab75d8557ef8e9f",
+  "position": {
+    "x": 645,
+    "y": 1828,
+    "z": 34,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 34
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LinkedCompanies"
+                    }
+                  },
+                  "Property": "Description"
+                }
+              },
+              "queryRef": "LinkedCompanies.Description",
+              "nativeQueryRef": "Description"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Linked Companies'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

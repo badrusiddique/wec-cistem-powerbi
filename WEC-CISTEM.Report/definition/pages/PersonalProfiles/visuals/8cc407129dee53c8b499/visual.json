@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "8cc407129dee53c8b499",
+  "position": {
+    "x": 8,
+    "y": 262,
+    "z": 6,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Date_of_Birth"
+                }
+              },
+              "queryRef": "Clients.Date_of_Birth",
+              "nativeQueryRef": "Date_of_Birth"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Marital_Status"
+                }
+              },
+              "queryRef": "Clients.Marital_Status",
+              "nativeQueryRef": "Marital_Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Dependants"
+                }
+              },
+              "queryRef": "Clients.Dependants",
+              "nativeQueryRef": "Dependants"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Personal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

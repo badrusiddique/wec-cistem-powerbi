@@ -1,0 +1,73 @@
+table Shareholders
+	lineageTag: 55fcd517-a549-5261-887b-580d49aa085b
+
+	column ShareRowID
+		dataType: int64
+		isHidden
+		lineageTag: 9e5b4709-009e-5b6b-bb21-cdcd4c12471d
+		summarizeBy: none
+		sourceColumn: ShareRowID
+
+	column Primary_ID
+		dataType: int64
+		isHidden
+		lineageTag: 43081f98-77eb-52e7-a77e-28c08e0953a3
+		summarizeBy: none
+		sourceColumn: Primary_ID
+
+	column Loan_ID
+		dataType: int64
+		lineageTag: afe22696-34b6-5b7d-809e-eccdc80722c7
+		summarizeBy: none
+		sourceColumn: Loan_ID
+
+	column Name
+		dataType: string
+		lineageTag: 700f05fe-1dc8-50ec-b0c0-9ddea8b75933
+		summarizeBy: none
+		sourceColumn: Name
+
+	column Shareholder
+		dataType: boolean
+		lineageTag: 401f9f42-d380-5df6-ad6f-33794129e74b
+		summarizeBy: none
+		sourceColumn: Shareholder
+
+	column ShareholderPercent
+		dataType: int64
+		lineageTag: fac47163-5864-5004-94f9-8d0364f9077d
+		summarizeBy: none
+		sourceColumn: ShareholderPercent
+
+	column Director
+		dataType: boolean
+		lineageTag: 62bdedc5-f33b-5e1c-8350-48060d780aa7
+		summarizeBy: none
+		sourceColumn: Director
+
+	column Gender
+		dataType: string
+		lineageTag: 93384812-7635-5760-b139-2368eefb4e32
+		summarizeBy: none
+		sourceColumn: Gender
+
+	partition Shareholders = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"ShareRowID" = Int64.Type, #"Primary_ID" = Int64.Type, #"Loan_ID" = Int64.Type, #"Name" = text, #"Shareholder" = logical, #"ShareholderPercent" = Int64.Type, #"Director" = logical, #"Gender" = text],
+			        {
+			                    {1, 101, 1, "Name-1", false, 1, false, "Gender-1"},
+			                    {2, 102, 2, "Name-2", true, 3, true, "Gender-2"},
+			                    {3, 103, 3, "Name-3", false, 5, false, "Gender-3"},
+			                    {4, 104, 4, "Name-4", false, 2, false, "Gender-4"},
+			                    {5, 105, 5, "Name-5", true, 4, true, "Gender-5"},
+			                    {6, 106, 6, "Name-6", false, 1, false, "Gender-6"},
+			                    {7, 107, 7, "Name-7", false, 3, false, "Gender-7"},
+			                    {8, 108, 8, "Name-8", true, 5, true, "Gender-8"}
+			        }
+			    )
+			in
+			    Source
+

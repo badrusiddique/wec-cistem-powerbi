@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "8b8f7e4abba155f499e4",
+  "position": {
+    "x": 8,
+    "y": 580,
+    "z": 12,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 12
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Age_45_54"
+                }
+              },
+              "queryRef": "Clients.Age_45_54",
+              "nativeQueryRef": "Age_45_54"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Age_Over55"
+                }
+              },
+              "queryRef": "Clients.Age_Over55",
+              "nativeQueryRef": "Age_Over55"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Demographics & Age \u2013 cont.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

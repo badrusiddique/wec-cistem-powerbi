@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "e252e1da0ecf506b9efc",
+  "position": {
+    "x": 857,
+    "y": 668,
+    "z": 14,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 14
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "SeasonalPayment"
+                }
+              },
+              "queryRef": "Loans.SeasonalPayment",
+              "nativeQueryRef": "SeasonalPayment"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "eacloan"
+                }
+              },
+              "queryRef": "Loans.eacloan",
+              "nativeQueryRef": "eacloan"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Disbursals \u2013 cont.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

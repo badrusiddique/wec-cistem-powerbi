@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c120538ddcc95b3fa343",
+  "position": {
+    "x": 8,
+    "y": 630,
+    "z": 13,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 13
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Number_ofEmployees"
+                }
+              },
+              "queryRef": "Clients.Number_ofEmployees",
+              "nativeQueryRef": "Number_ofEmployees"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Jobs_Created"
+                }
+              },
+              "queryRef": "Clients.Jobs_Created",
+              "nativeQueryRef": "Jobs_Created"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Jobs_Maintained"
+                }
+              },
+              "queryRef": "Clients.Jobs_Maintained",
+              "nativeQueryRef": "Jobs_Maintained"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Metrics / Financing'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

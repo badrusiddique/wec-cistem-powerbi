@@ -1,0 +1,79 @@
+table Locations
+	lineageTag: f9c6f49b-fe0a-5d38-a4ae-ba44146358c9
+
+	column LocationID
+		dataType: int64
+		isHidden
+		lineageTag: 96f92640-bd56-56c8-8d7f-b5ce28a9ded5
+		summarizeBy: none
+		sourceColumn: LocationID
+
+	column ClientID
+		dataType: int64
+		isHidden
+		lineageTag: 92d9157a-0c55-5706-bf36-cec813d3b29d
+		summarizeBy: none
+		sourceColumn: ClientID
+
+	column Address
+		dataType: string
+		lineageTag: cea46441-0bac-519e-9d00-99467791edb1
+		summarizeBy: none
+		sourceColumn: Address
+
+	column City
+		dataType: string
+		lineageTag: ccbb69ac-774c-55cd-9a49-d8d1a92b594e
+		summarizeBy: none
+		sourceColumn: City
+
+	column Province
+		dataType: string
+		lineageTag: 794bdd2d-c304-5f1a-89f5-c279b81ba041
+		summarizeBy: none
+		sourceColumn: Province
+
+	column Postal_Code
+		dataType: string
+		lineageTag: 3a2ef9bc-2a96-50db-9eb9-ff42a67f3cdf
+		summarizeBy: none
+		sourceColumn: Postal_Code
+
+	column Region
+		dataType: string
+		lineageTag: d62c5f19-0f57-5f9f-9b27-aa71b46e328a
+		summarizeBy: none
+		sourceColumn: Region
+
+	column Location_Name
+		dataType: string
+		lineageTag: b40c1df3-fba0-5e76-9d4c-e4be3dbdcf6f
+		summarizeBy: none
+		sourceColumn: Location_Name
+
+	column Primary
+		dataType: boolean
+		lineageTag: e0b5c6cd-c527-54cb-b719-8cc0ce1f1a06
+		summarizeBy: none
+		sourceColumn: Primary
+
+	partition Locations = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"LocationID" = Int64.Type, #"ClientID" = Int64.Type, #"Address" = text, #"City" = text, #"Province" = text, #"Postal_Code" = text, #"Region" = text, #"Location_Name" = text, #"Primary" = logical],
+			        {
+			                    {1, 101, "Address-1", "City-1", "Province-1", "Postal_Code-1", "Region-1", "Location_Name-1", false},
+			                    {2, 102, "Address-2", "City-2", "Province-2", "Postal_Code-2", "Region-2", "Location_Name-2", false},
+			                    {3, 103, "Address-3", "City-3", "Province-3", "Postal_Code-3", "Region-3", "Location_Name-3", true},
+			                    {4, 104, "Address-4", "City-4", "Province-4", "Postal_Code-4", "Region-4", "Location_Name-4", false},
+			                    {5, 105, "Address-5", "City-5", "Province-5", "Postal_Code-5", "Region-5", "Location_Name-5", false},
+			                    {6, 106, "Address-6", "City-6", "Province-6", "Postal_Code-6", "Region-6", "Location_Name-6", true},
+			                    {7, 107, "Address-7", "City-7", "Province-7", "Postal_Code-7", "Region-7", "Location_Name-7", false},
+			                    {8, 108, "Address-8", "City-8", "Province-8", "Postal_Code-8", "Region-8", "Location_Name-8", false}
+			        }
+			    )
+			in
+			    Source
+

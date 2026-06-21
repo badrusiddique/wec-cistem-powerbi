@@ -1,0 +1,99 @@
+table TrainingReg
+	lineageTag: 664e8723-7009-59ec-81d7-4408189d7e83
+
+	column RegistrationID
+		dataType: int64
+		isHidden
+		lineageTag: 6d446eda-4dc6-5927-a6b6-6d968778e782
+		summarizeBy: none
+		sourceColumn: RegistrationID
+
+	column ClientID
+		dataType: int64
+		isHidden
+		lineageTag: 0991d1eb-24d5-5837-a7b0-551b2a19fb35
+		summarizeBy: none
+		sourceColumn: ClientID
+
+	column TrainingID
+		dataType: int64
+		lineageTag: 9ac5e5ac-8420-5dbd-816d-3d846444d220
+		summarizeBy: none
+		sourceColumn: TrainingID
+
+	column RegDate
+		dataType: dateTime
+		lineageTag: 5a246b1a-7b7c-52e6-acb0-943f98298707
+		summarizeBy: none
+		sourceColumn: RegDate
+
+	column TotalAmtPaid
+		dataType: double
+		lineageTag: 7f353401-f542-5c0c-ba10-fdca606741ac
+		summarizeBy: none
+		sourceColumn: TotalAmtPaid
+
+	column PmtReceived
+		dataType: boolean
+		lineageTag: 00b75cc0-680c-5808-a3ca-a334c5f733e0
+		summarizeBy: none
+		sourceColumn: PmtReceived
+
+	column Attended
+		dataType: boolean
+		lineageTag: d055bb5a-43dc-5c8d-ae4f-2ab475fb2578
+		summarizeBy: none
+		sourceColumn: Attended
+
+	column Cancelled
+		dataType: boolean
+		lineageTag: fe4205d3-62e6-5cf4-8d86-8d183065af1b
+		summarizeBy: none
+		sourceColumn: Cancelled
+
+	column RequiredForLoan
+		dataType: boolean
+		lineageTag: 09b8b8ab-7f7d-5be8-84d2-10f36a7a46b5
+		summarizeBy: none
+		sourceColumn: RequiredForLoan
+
+	column HowDidYouHear
+		dataType: string
+		lineageTag: 65a15f08-e56d-5a5a-b39e-4555abaf3e17
+		summarizeBy: none
+		sourceColumn: HowDidYouHear
+
+	column Notes
+		dataType: string
+		lineageTag: a9b004ae-28a2-5995-acd2-3367a33476a7
+		summarizeBy: none
+		sourceColumn: Notes
+
+	partition TrainingReg = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"RegistrationID" = Int64.Type, #"ClientID" = Int64.Type, #"TrainingID" = Int64.Type, #"RegDate" = date, #"TotalAmtPaid" = number, #"PmtReceived" = logical, #"Attended" = logical, #"Cancelled" = logical, #"RequiredForLoan" = logical, #"HowDidYouHear" = text, #"Notes" = text],
+			        {
+			                    {1, 101, 1, #date(2023,1,1), 1000.0, false, false, true, true, "HowDidYouHear-1", "Sample note 1"},
+			                    {2, 101, 1, #date(2024,2,2), 2234.0, true, true, false, false, "HowDidYouHear-2", "Sample note 2"},
+			                    {3, 102, 2, #date(2024,2,2), 2234.0, true, true, false, false, "HowDidYouHear-2", "Sample note 2"},
+			                    {4, 102, 2, #date(2023,3,3), 3468.0, false, false, false, false, "HowDidYouHear-3", "Sample note 3"},
+			                    {5, 103, 3, #date(2023,3,3), 3468.0, false, false, false, false, "HowDidYouHear-3", "Sample note 3"},
+			                    {6, 103, 3, #date(2024,4,4), 4702.0, false, false, true, true, "HowDidYouHear-4", "Sample note 4"},
+			                    {7, 104, 4, #date(2024,4,4), 4702.0, false, false, true, true, "HowDidYouHear-4", "Sample note 4"},
+			                    {8, 104, 4, #date(2023,5,5), 5936.0, true, true, false, false, "HowDidYouHear-5", "Sample note 5"},
+			                    {9, 105, 1, #date(2023,5,5), 5936.0, true, true, false, false, "HowDidYouHear-5", "Sample note 5"},
+			                    {10, 105, 1, #date(2024,6,6), 7170.0, false, false, false, false, "HowDidYouHear-6", "Sample note 6"},
+			                    {11, 106, 2, #date(2024,6,6), 7170.0, false, false, false, false, "HowDidYouHear-6", "Sample note 6"},
+			                    {12, 106, 2, #date(2023,7,7), 8404.0, false, false, true, true, "HowDidYouHear-7", "Sample note 7"},
+			                    {13, 107, 3, #date(2023,7,7), 8404.0, false, false, true, true, "HowDidYouHear-7", "Sample note 7"},
+			                    {14, 107, 3, #date(2024,8,8), 9638.0, true, true, false, false, "HowDidYouHear-8", "Sample note 8"},
+			                    {15, 108, 4, #date(2024,8,8), 9638.0, true, true, false, false, "HowDidYouHear-8", "Sample note 8"},
+			                    {16, 108, 4, #date(2023,9,9), 1872.0, false, false, false, false, "HowDidYouHear-9", "Sample note 9"}
+			        }
+			    )
+			in
+			    Source
+

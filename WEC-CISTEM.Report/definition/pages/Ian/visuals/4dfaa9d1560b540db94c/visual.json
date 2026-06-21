@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "4dfaa9d1560b540db94c",
+  "position": {
+    "x": 645,
+    "y": 262,
+    "z": 7,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Principal_Language"
+                }
+              },
+              "queryRef": "Clients.Principal_Language",
+              "nativeQueryRef": "Principal_Language"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Client"
+                }
+              },
+              "queryRef": "Clients.Client",
+              "nativeQueryRef": "Client"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Inactive_Record"
+                }
+              },
+              "queryRef": "Clients.Inactive_Record",
+              "nativeQueryRef": "Inactive_Record"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Business_Closed"
+                }
+              },
+              "queryRef": "Clients.Business_Closed",
+              "nativeQueryRef": "Business_Closed"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Newsletter_Recipient"
+                }
+              },
+              "queryRef": "Clients.Newsletter_Recipient",
+              "nativeQueryRef": "Newsletter_Recipient"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Profile'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

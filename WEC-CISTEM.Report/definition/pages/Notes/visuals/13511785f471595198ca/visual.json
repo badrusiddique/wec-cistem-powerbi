@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "13511785f471595198ca",
+  "position": {
+    "x": 8,
+    "y": 8,
+    "z": 0,
+    "width": 1264,
+    "height": 40,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "# Clients"
+                }
+              },
+              "queryRef": "_Measures.# Clients",
+              "nativeQueryRef": "# Clients"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'WEC CISTEM  \u2014  Notes'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

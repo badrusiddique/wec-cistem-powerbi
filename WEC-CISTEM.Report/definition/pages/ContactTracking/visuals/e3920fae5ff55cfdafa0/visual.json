@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "e3920fae5ff55cfdafa0",
+  "position": {
+    "x": 8,
+    "y": 440,
+    "z": 9,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 9
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ContactTracking"
+                    }
+                  },
+                  "Property": "Status_Date"
+                }
+              },
+              "queryRef": "ContactTracking.Status_Date",
+              "nativeQueryRef": "Status_Date"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dates \u2013 cont.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

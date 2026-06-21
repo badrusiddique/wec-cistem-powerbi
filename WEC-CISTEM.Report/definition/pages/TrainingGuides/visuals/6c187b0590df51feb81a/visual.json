@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "6c187b0590df51feb81a",
+  "position": {
+    "x": 645,
+    "y": 490,
+    "z": 10,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Training"
+                    }
+                  },
+                  "Property": "Facilitator"
+                }
+              },
+              "queryRef": "Training.Facilitator",
+              "nativeQueryRef": "Facilitator"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Training"
+                    }
+                  },
+                  "Property": "Fee"
+                }
+              },
+              "queryRef": "Training.Fee",
+              "nativeQueryRef": "Fee"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Training"
+                    }
+                  },
+                  "Property": "Active"
+                }
+              },
+              "queryRef": "Training.Active",
+              "nativeQueryRef": "Active"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Course Detail'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

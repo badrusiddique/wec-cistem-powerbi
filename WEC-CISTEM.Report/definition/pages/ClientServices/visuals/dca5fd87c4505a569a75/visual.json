@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "dca5fd87c4505a569a75",
+  "position": {
+    "x": 645,
+    "y": 490,
+    "z": 10,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "RefAdvisor"
+                }
+              },
+              "queryRef": "ClientServices.RefAdvisor",
+              "nativeQueryRef": "RefAdvisor"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "RefOther"
+                }
+              },
+              "queryRef": "ClientServices.RefOther",
+              "nativeQueryRef": "RefOther"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Referred To \u2013 cont.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

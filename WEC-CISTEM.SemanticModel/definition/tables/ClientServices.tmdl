@@ -1,0 +1,133 @@
+table ClientServices
+	lineageTag: 8e2d6ac0-d011-5421-8249-a5059df26c8f
+
+	column Service_ID
+		dataType: int64
+		isHidden
+		lineageTag: 58435a26-539d-56f7-9332-1315159ab240
+		summarizeBy: none
+		sourceColumn: Service_ID
+
+	column SPrimary_ID
+		dataType: int64
+		isHidden
+		lineageTag: c0d05661-13b1-5c8b-98cf-05e487f1bb4c
+		summarizeBy: none
+		sourceColumn: SPrimary_ID
+
+	column Date
+		dataType: dateTime
+		lineageTag: 0a8500b6-e61c-58c7-b241-7dc337dad095
+		summarizeBy: none
+		sourceColumn: Date
+
+	column Staff_ID
+		dataType: string
+		lineageTag: ba25a753-e4a5-58ac-8cfb-db7de81edda6
+		summarizeBy: none
+		sourceColumn: Staff_ID
+
+	column WESBC_Department
+		dataType: string
+		lineageTag: b909b5cf-b898-5b28-9693-9b706d875247
+		summarizeBy: none
+		sourceColumn: WESBC_Department
+
+	column Contact_Type
+		dataType: string
+		lineageTag: 3a75c84d-9d73-52e0-8161-2cd5e8527553
+		summarizeBy: none
+		sourceColumn: Contact_Type
+
+	column Info_Given
+		dataType: string
+		lineageTag: 91474571-8cd6-530e-84ed-ec705addd7ad
+		summarizeBy: none
+		sourceColumn: Info_Given
+
+	column Total_Time_Required
+		dataType: int64
+		lineageTag: 4aae13b8-1972-5cc7-909b-01987142a36a
+		summarizeBy: none
+		sourceColumn: Total_Time_Required
+
+	column Amount_Leveraged
+		dataType: double
+		lineageTag: 87a248dd-c328-59b2-ad9d-c1474db14e20
+		summarizeBy: none
+		sourceColumn: Amount_Leveraged
+
+	column RefWD
+		dataType: boolean
+		lineageTag: 897be137-efa3-52c3-9a3c-e3f1cbea5d12
+		summarizeBy: none
+		sourceColumn: RefWD
+
+	column RefCFDC
+		dataType: boolean
+		lineageTag: 762abfdf-032b-5285-90b2-bee4ab808b7f
+		summarizeBy: none
+		sourceColumn: RefCFDC
+
+	column RefChamber
+		dataType: boolean
+		lineageTag: 7a43d79c-e8b0-51c1-a745-ba08b6047d78
+		summarizeBy: none
+		sourceColumn: RefChamber
+
+	column RefFinancial
+		dataType: boolean
+		lineageTag: 35a6edd2-ed40-518c-aa84-7e4c568acf9a
+		summarizeBy: none
+		sourceColumn: RefFinancial
+
+	column RefVanCity
+		dataType: boolean
+		lineageTag: 22c8d250-bc2f-5206-870e-0665468f3596
+		summarizeBy: none
+		sourceColumn: RefVanCity
+
+	column RefAdvisor
+		dataType: boolean
+		lineageTag: 48d5be32-030b-567c-9eab-c3bc958f2521
+		summarizeBy: none
+		sourceColumn: RefAdvisor
+
+	column RefOther
+		dataType: boolean
+		lineageTag: 22345d6e-1f91-52e5-9bcb-ea7436907aa1
+		summarizeBy: none
+		sourceColumn: RefOther
+
+	column Financing
+		dataType: boolean
+		lineageTag: 4bf7175a-bcca-5f2a-9181-ce85fd6e415e
+		summarizeBy: none
+		sourceColumn: Financing
+
+	column Notes
+		dataType: string
+		lineageTag: b26a206c-c3ad-523a-b381-f4f48db1905a
+		summarizeBy: none
+		sourceColumn: Notes
+
+	partition ClientServices = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"Service_ID" = Int64.Type, #"SPrimary_ID" = Int64.Type, #"Date" = date, #"Staff_ID" = text, #"WESBC_Department" = text, #"Contact_Type" = text, #"Info_Given" = text, #"Total_Time_Required" = Int64.Type, #"Amount_Leveraged" = number, #"RefWD" = logical, #"RefCFDC" = logical, #"RefChamber" = logical, #"RefFinancial" = logical, #"RefVanCity" = logical, #"RefAdvisor" = logical, #"RefOther" = logical, #"Financing" = logical, #"Notes" = text],
+			        {
+			                    {1, 101, #date(2023,1,1), "J. Olsen", "WESBC_Department-1", "Contact_Type-1", "Info_Given-1", 1, 1000.0, false, false, false, true, false, false, false, true, "Sample note 1"},
+			                    {2, 102, #date(2024,2,2), "M. Reyes", "WESBC_Department-2", "Contact_Type-2", "Info_Given-2", 3, 2234.0, true, false, false, false, false, false, true, false, "Sample note 2"},
+			                    {3, 103, #date(2023,3,3), "T. Bhatt", "WESBC_Department-3", "Contact_Type-3", "Info_Given-3", 5, 3468.0, false, true, true, false, true, true, false, false, "Sample note 3"},
+			                    {4, 104, #date(2024,4,4), "K. Lund", "WESBC_Department-4", "Contact_Type-4", "Info_Given-4", 2, 4702.0, false, false, false, true, false, false, false, true, "Sample note 4"},
+			                    {5, 105, #date(2023,5,5), "J. Olsen", "WESBC_Department-5", "Contact_Type-5", "Info_Given-5", 4, 5936.0, true, false, false, false, false, false, true, false, "Sample note 5"},
+			                    {6, 106, #date(2024,6,6), "M. Reyes", "WESBC_Department-6", "Contact_Type-6", "Info_Given-6", 1, 7170.0, false, true, true, false, true, true, false, false, "Sample note 6"},
+			                    {7, 107, #date(2023,7,7), "T. Bhatt", "WESBC_Department-7", "Contact_Type-7", "Info_Given-7", 3, 8404.0, false, false, false, true, false, false, false, true, "Sample note 7"},
+			                    {8, 108, #date(2024,8,8), "K. Lund", "WESBC_Department-8", "Contact_Type-8", "Info_Given-8", 5, 9638.0, true, false, false, false, false, false, true, false, "Sample note 8"}
+			        }
+			    )
+			in
+			    Source
+

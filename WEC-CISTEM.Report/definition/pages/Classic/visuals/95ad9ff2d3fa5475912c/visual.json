@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "95ad9ff2d3fa5475912c",
+  "position": {
+    "x": 645,
+    "y": 580,
+    "z": 13,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 13
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Programs"
+                }
+              },
+              "queryRef": "Clients.Programs",
+              "nativeQueryRef": "Programs"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "WEConnect"
+                }
+              },
+              "queryRef": "Clients.WEConnect",
+              "nativeQueryRef": "WEConnect"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "WEConnect_Cert_By"
+                }
+              },
+              "queryRef": "Clients.WEConnect_Cert_By",
+              "nativeQueryRef": "WEConnect_Cert_By"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Growth_Client"
+                }
+              },
+              "queryRef": "Clients.Growth_Client",
+              "nativeQueryRef": "Growth_Client"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "NDIT"
+                }
+              },
+              "queryRef": "Clients.NDIT",
+              "nativeQueryRef": "NDIT"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Program & Status'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

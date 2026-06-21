@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "d44f9b361c1c5342a649",
+  "position": {
+    "x": 645,
+    "y": 948,
+    "z": 20,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 20
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Manufacturing_PPE"
+                }
+              },
+              "queryRef": "Clients.Manufacturing_PPE",
+              "nativeQueryRef": "Manufacturing_PPE"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Business_Start_Date"
+                }
+              },
+              "queryRef": "Clients.Business_Start_Date",
+              "nativeQueryRef": "Business_Start_Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Home_Based"
+                }
+              },
+              "queryRef": "Clients.Home_Based",
+              "nativeQueryRef": "Home_Based"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Commercial_Outlet"
+                }
+              },
+              "queryRef": "Clients.Commercial_Outlet",
+              "nativeQueryRef": "Commercial_Outlet"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Distributor_Agent"
+                }
+              },
+              "queryRef": "Clients.Distributor_Agent",
+              "nativeQueryRef": "Distributor_Agent"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Industry / Business \u2013 cont.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

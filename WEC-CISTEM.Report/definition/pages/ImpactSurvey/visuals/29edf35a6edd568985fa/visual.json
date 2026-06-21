@@ -1,0 +1,101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "29edf35a6edd568985fa",
+  "position": {
+    "x": 8,
+    "y": 262,
+    "z": 6,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "SurveyDate"
+                }
+              },
+              "queryRef": "Impact.SurveyDate",
+              "nativeQueryRef": "SurveyDate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "IsRunning"
+                }
+              },
+              "queryRef": "Impact.IsRunning",
+              "nativeQueryRef": "IsRunning"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "Revenue"
+                }
+              },
+              "queryRef": "Impact.Revenue",
+              "nativeQueryRef": "Revenue"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "Months"
+                }
+              },
+              "queryRef": "Impact.Months",
+              "nativeQueryRef": "Months"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Survey'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

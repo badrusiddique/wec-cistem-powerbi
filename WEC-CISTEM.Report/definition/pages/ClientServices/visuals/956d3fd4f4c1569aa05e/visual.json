@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "956d3fd4f4c1569aa05e",
+  "position": {
+    "x": 645,
+    "y": 262,
+    "z": 7,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Total_Time_Required"
+                }
+              },
+              "queryRef": "ClientServices.Total_Time_Required",
+              "nativeQueryRef": "Total_Time_Required"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Amount_Leveraged"
+                }
+              },
+              "queryRef": "ClientServices.Amount_Leveraged",
+              "nativeQueryRef": "Amount_Leveraged"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Financing"
+                }
+              },
+              "queryRef": "ClientServices.Financing",
+              "nativeQueryRef": "Financing"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Time & Leverage'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

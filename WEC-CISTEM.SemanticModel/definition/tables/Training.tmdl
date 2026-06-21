@@ -1,0 +1,74 @@
+table Training
+	lineageTag: cd039642-c5f7-50ea-aa08-36507b0989c0
+
+	column TrainingID
+		dataType: int64
+		isHidden
+		lineageTag: 6de06980-4315-52b2-bf0b-730e3866285b
+		summarizeBy: none
+		sourceColumn: TrainingID
+
+	column TrainingType
+		dataType: string
+		lineageTag: 4f495eb7-3bd4-5bc6-9c84-8922a2b8df49
+		summarizeBy: none
+		sourceColumn: TrainingType
+
+	column CourseName
+		dataType: string
+		lineageTag: d80a199c-fe89-5555-a4cb-d164a69d0c96
+		summarizeBy: none
+		sourceColumn: CourseName
+
+	column Location
+		dataType: string
+		lineageTag: 4b813f77-2a57-5fed-9cde-81264bd25245
+		summarizeBy: none
+		sourceColumn: Location
+
+	column StartDate
+		dataType: dateTime
+		lineageTag: d3d29404-8899-5ddd-b20c-b2fe37bd4136
+		summarizeBy: none
+		sourceColumn: StartDate
+
+	column EndDate
+		dataType: dateTime
+		lineageTag: 446d670e-62b2-5e4b-a1a6-ab31b09012de
+		summarizeBy: none
+		sourceColumn: EndDate
+
+	column Facilitator
+		dataType: string
+		lineageTag: 1071ad08-03d9-525e-814b-704f6429c43e
+		summarizeBy: none
+		sourceColumn: Facilitator
+
+	column Fee
+		dataType: double
+		lineageTag: 349cd0f3-6296-5349-8d4e-23551a8f3d03
+		summarizeBy: none
+		sourceColumn: Fee
+
+	column Active
+		dataType: boolean
+		lineageTag: 326703f6-4d78-57f6-9bbe-c44311c8d328
+		summarizeBy: none
+		sourceColumn: Active
+
+	partition Training = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"TrainingID" = Int64.Type, #"TrainingType" = text, #"CourseName" = text, #"Location" = text, #"StartDate" = date, #"EndDate" = date, #"Facilitator" = text, #"Fee" = number, #"Active" = logical],
+			        {
+			                    {1, "TrainingType-1", "Business Basics", "Location-1", #date(2023,1,1), #date(2023,1,1), "J. Olsen", 199.0, true},
+			                    {2, "TrainingType-2", "Marketing 101", "Location-2", #date(2024,2,2), #date(2024,2,2), "M. Reyes", 1433.0, false},
+			                    {3, "TrainingType-3", "Cash Flow", "Location-3", #date(2023,3,3), #date(2023,3,3), "T. Bhatt", 2667.0, false},
+			                    {4, "TrainingType-4", "Digital Sales", "Location-4", #date(2024,4,4), #date(2024,4,4), "K. Lund", 3901.0, true}
+			        }
+			    )
+			in
+			    Source
+

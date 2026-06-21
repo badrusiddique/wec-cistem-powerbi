@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "1dc77354293b52a89bc1",
+  "position": {
+    "x": 645,
+    "y": 368,
+    "z": 9,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 9
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Distributor_Agent"
+                }
+              },
+              "queryRef": "Clients.Distributor_Agent",
+              "nativeQueryRef": "Distributor_Agent"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Franchise"
+                }
+              },
+              "queryRef": "Clients.Franchise",
+              "nativeQueryRef": "Franchise"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Social_Enterprise"
+                }
+              },
+              "queryRef": "Clients.Social_Enterprise",
+              "nativeQueryRef": "Social_Enterprise"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Import_Export"
+                }
+              },
+              "queryRef": "Clients.Import_Export",
+              "nativeQueryRef": "Import_Export"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Home_Based"
+                }
+              },
+              "queryRef": "Clients.Home_Based",
+              "nativeQueryRef": "Home_Based"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Business Type'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "a23bb57cf2125d6987bb",
+  "position": {
+    "x": 432,
+    "y": 1316,
+    "z": 27,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 27
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Contact_Notes"
+                }
+              },
+              "queryRef": "Clients.Contact_Notes",
+              "nativeQueryRef": "Contact_Notes"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Contact Notes'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

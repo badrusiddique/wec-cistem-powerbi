@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "e5d143eeb954551bb660",
+  "position": {
+    "x": 8,
+    "y": 262,
+    "z": 6,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "RegDate"
+                }
+              },
+              "queryRef": "TrainingReg.RegDate",
+              "nativeQueryRef": "RegDate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "Attended"
+                }
+              },
+              "queryRef": "TrainingReg.Attended",
+              "nativeQueryRef": "Attended"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "Cancelled"
+                }
+              },
+              "queryRef": "TrainingReg.Cancelled",
+              "nativeQueryRef": "Cancelled"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "RequiredForLoan"
+                }
+              },
+              "queryRef": "TrainingReg.RequiredForLoan",
+              "nativeQueryRef": "RequiredForLoan"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "PmtReceived"
+                }
+              },
+              "queryRef": "TrainingReg.PmtReceived",
+              "nativeQueryRef": "PmtReceived"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Training Registration'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

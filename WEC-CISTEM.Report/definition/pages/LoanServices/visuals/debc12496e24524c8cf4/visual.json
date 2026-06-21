@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "debc12496e24524c8cf4",
+  "position": {
+    "x": 857,
+    "y": 490,
+    "z": 11,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 11
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "LoanExpiryDate"
+                }
+              },
+              "queryRef": "Loans.LoanExpiryDate",
+              "nativeQueryRef": "LoanExpiryDate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "AdminFee"
+                }
+              },
+              "queryRef": "Loans.AdminFee",
+              "nativeQueryRef": "AdminFee"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "Equity_Amount"
+                }
+              },
+              "queryRef": "Loans.Equity_Amount",
+              "nativeQueryRef": "Equity_Amount"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dates & Fees'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

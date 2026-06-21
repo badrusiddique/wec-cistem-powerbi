@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "d09f53074906581e9fe5",
+  "position": {
+    "x": 432,
+    "y": 668,
+    "z": 13,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 13
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "Reliable"
+                }
+              },
+              "queryRef": "Impact.Reliable",
+              "nativeQueryRef": "Reliable"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "HowToImprove"
+                }
+              },
+              "queryRef": "Impact.HowToImprove",
+              "nativeQueryRef": "HowToImprove"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Reliability & Notes'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

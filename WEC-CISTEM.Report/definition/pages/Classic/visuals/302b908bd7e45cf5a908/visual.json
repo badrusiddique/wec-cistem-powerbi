@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "302b908bd7e45cf5a908",
+  "position": {
+    "x": 645,
+    "y": 474,
+    "z": 11,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 11
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Immigrant_NewCanadian_Refugee"
+                }
+              },
+              "queryRef": "Clients.Immigrant_NewCanadian_Refugee",
+              "nativeQueryRef": "Immigrant_NewCanadian_Refugee"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Age"
+                }
+              },
+              "queryRef": "Clients.Age",
+              "nativeQueryRef": "Age"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Age_Under30"
+                }
+              },
+              "queryRef": "Clients.Age_Under30",
+              "nativeQueryRef": "Age_Under30"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Age_30_39"
+                }
+              },
+              "queryRef": "Clients.Age_30_39",
+              "nativeQueryRef": "Age_30_39"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Age_40_44"
+                }
+              },
+              "queryRef": "Clients.Age_40_44",
+              "nativeQueryRef": "Age_40_44"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Demographics & Age \u2013 cont.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

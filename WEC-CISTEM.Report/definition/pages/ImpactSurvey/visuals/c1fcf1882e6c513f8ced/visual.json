@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c1fcf1882e6c513f8ced",
+  "position": {
+    "x": 432,
+    "y": 490,
+    "z": 10,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "CurSkillHR"
+                }
+              },
+              "queryRef": "Impact.CurSkillHR",
+              "nativeQueryRef": "CurSkillHR"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "CurSkillMktg"
+                }
+              },
+              "queryRef": "Impact.CurSkillMktg",
+              "nativeQueryRef": "CurSkillMktg"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Skill Levels \u2013 cont.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

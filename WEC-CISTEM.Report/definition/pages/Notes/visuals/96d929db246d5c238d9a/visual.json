@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "96d929db246d5c238d9a",
+  "position": {
+    "x": 8,
+    "y": 368,
+    "z": 8,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "ClientServices.Date",
+              "nativeQueryRef": "Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Staff_ID"
+                }
+              },
+              "queryRef": "ClientServices.Staff_ID",
+              "nativeQueryRef": "Staff_ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Notes"
+                }
+              },
+              "queryRef": "ClientServices.Notes",
+              "nativeQueryRef": "Notes"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Service Notes'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "23883ecd3fc2547c87af",
+  "position": {
+    "x": 8,
+    "y": 490,
+    "z": 9,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 9
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MenteeMatches"
+                    }
+                  },
+                  "Property": "ActiveMentxx"
+                }
+              },
+              "queryRef": "MenteeMatches.ActiveMentxx",
+              "nativeQueryRef": "ActiveMentxx"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MenteeMatches"
+                    }
+                  },
+                  "Property": "challengeset"
+                }
+              },
+              "queryRef": "MenteeMatches.challengeset",
+              "nativeQueryRef": "challengeset"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MenteeMatches"
+                    }
+                  },
+                  "Property": "challenge1"
+                }
+              },
+              "queryRef": "MenteeMatches.challenge1",
+              "nativeQueryRef": "challenge1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MenteeMatches"
+                    }
+                  },
+                  "Property": "challenge2"
+                }
+              },
+              "queryRef": "MenteeMatches.challenge2",
+              "nativeQueryRef": "challenge2"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Mentee Match'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

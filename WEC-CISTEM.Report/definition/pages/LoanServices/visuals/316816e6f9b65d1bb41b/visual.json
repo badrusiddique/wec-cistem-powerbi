@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "316816e6f9b65d1bb41b",
+  "position": {
+    "x": 8,
+    "y": 896,
+    "z": 16,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 16
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FSReceived"
+                    }
+                  },
+                  "Property": "IncStmt"
+                }
+              },
+              "queryRef": "FSReceived.IncStmt",
+              "nativeQueryRef": "IncStmt"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FSReceived"
+                    }
+                  },
+                  "Property": "BalSht"
+                }
+              },
+              "queryRef": "FSReceived.BalSht",
+              "nativeQueryRef": "BalSht"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FSReceived"
+                    }
+                  },
+                  "Property": "CashFlow"
+                }
+              },
+              "queryRef": "FSReceived.CashFlow",
+              "nativeQueryRef": "CashFlow"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FSReceived"
+                    }
+                  },
+                  "Property": "YrEnd"
+                }
+              },
+              "queryRef": "FSReceived.YrEnd",
+              "nativeQueryRef": "YrEnd"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FSReceived"
+                    }
+                  },
+                  "Property": "ForPeriodOf"
+                }
+              },
+              "queryRef": "FSReceived.ForPeriodOf",
+              "nativeQueryRef": "ForPeriodOf"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Financial Statements'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

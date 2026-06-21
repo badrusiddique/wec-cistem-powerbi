@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "b9088b911d6c57d3b906",
+  "position": {
+    "x": 857,
+    "y": 262,
+    "z": 8,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "HAddress"
+                }
+              },
+              "queryRef": "Clients.HAddress",
+              "nativeQueryRef": "HAddress"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "HCity"
+                }
+              },
+              "queryRef": "Clients.HCity",
+              "nativeQueryRef": "HCity"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "HProv"
+                }
+              },
+              "queryRef": "Clients.HProv",
+              "nativeQueryRef": "HProv"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Home Address'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

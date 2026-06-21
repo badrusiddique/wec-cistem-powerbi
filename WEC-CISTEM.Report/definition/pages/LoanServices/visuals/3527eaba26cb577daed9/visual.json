@@ -1,0 +1,101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "3527eaba26cb577daed9",
+  "position": {
+    "x": 645,
+    "y": 896,
+    "z": 17,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 17
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FSReceived"
+                    }
+                  },
+                  "Property": "DateReceived"
+                }
+              },
+              "queryRef": "FSReceived.DateReceived",
+              "nativeQueryRef": "DateReceived"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FSReceived"
+                    }
+                  },
+                  "Property": "DateToAnalyst"
+                }
+              },
+              "queryRef": "FSReceived.DateToAnalyst",
+              "nativeQueryRef": "DateToAnalyst"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FSReceived"
+                    }
+                  },
+                  "Property": "DateReviewed"
+                }
+              },
+              "queryRef": "FSReceived.DateReviewed",
+              "nativeQueryRef": "DateReviewed"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FSReceived"
+                    }
+                  },
+                  "Property": "Notes"
+                }
+              },
+              "queryRef": "FSReceived.Notes",
+              "nativeQueryRef": "Notes"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'FS Dates'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

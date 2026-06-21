@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f1df1bfb3345517e8f83",
+  "position": {
+    "x": 8,
+    "y": 262,
+    "z": 6,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "ClientServices.Date",
+              "nativeQueryRef": "Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Staff_ID"
+                }
+              },
+              "queryRef": "ClientServices.Staff_ID",
+              "nativeQueryRef": "Staff_ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "WESBC_Department"
+                }
+              },
+              "queryRef": "ClientServices.WESBC_Department",
+              "nativeQueryRef": "WESBC_Department"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Contact_Type"
+                }
+              },
+              "queryRef": "ClientServices.Contact_Type",
+              "nativeQueryRef": "Contact_Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Info_Given"
+                }
+              },
+              "queryRef": "ClientServices.Info_Given",
+              "nativeQueryRef": "Info_Given"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Service'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

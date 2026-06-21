@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "96874a0dba935cdc9885",
+  "position": {
+    "x": 857,
+    "y": 262,
+    "z": 8,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ContactTracking"
+                    }
+                  },
+                  "Property": "Date__Reviewed"
+                }
+              },
+              "queryRef": "ContactTracking.Date__Reviewed",
+              "nativeQueryRef": "Date__Reviewed"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ContactTracking"
+                    }
+                  },
+                  "Property": "Date_To_Analyst"
+                }
+              },
+              "queryRef": "ContactTracking.Date_To_Analyst",
+              "nativeQueryRef": "Date_To_Analyst"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ContactTracking"
+                    }
+                  },
+                  "Property": "Date_Client_Contact"
+                }
+              },
+              "queryRef": "ContactTracking.Date_Client_Contact",
+              "nativeQueryRef": "Date_Client_Contact"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dates'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

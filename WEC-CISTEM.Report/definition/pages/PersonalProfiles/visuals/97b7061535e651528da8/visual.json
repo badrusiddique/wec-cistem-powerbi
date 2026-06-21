@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "97b7061535e651528da8",
+  "position": {
+    "x": 8,
+    "y": 986,
+    "z": 18,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 18
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Shareholders"
+                    }
+                  },
+                  "Property": "Name"
+                }
+              },
+              "queryRef": "Shareholders.Name",
+              "nativeQueryRef": "Name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Shareholders"
+                    }
+                  },
+                  "Property": "Shareholder"
+                }
+              },
+              "queryRef": "Shareholders.Shareholder",
+              "nativeQueryRef": "Shareholder"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Shareholders"
+                    }
+                  },
+                  "Property": "ShareholderPercent"
+                }
+              },
+              "queryRef": "Shareholders.ShareholderPercent",
+              "nativeQueryRef": "ShareholderPercent"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Shareholders"
+                    }
+                  },
+                  "Property": "Director"
+                }
+              },
+              "queryRef": "Shareholders.Director",
+              "nativeQueryRef": "Director"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Shareholders"
+                    }
+                  },
+                  "Property": "Gender"
+                }
+              },
+              "queryRef": "Shareholders.Gender",
+              "nativeQueryRef": "Gender"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Shareholders'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

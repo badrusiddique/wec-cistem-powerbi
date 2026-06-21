@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "b7de9c55399b5a1bb984",
+  "position": {
+    "x": 8,
+    "y": 262,
+    "z": 6,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Business_Structure"
+                }
+              },
+              "queryRef": "Clients.Business_Structure",
+              "nativeQueryRef": "Business_Structure"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Business_Number"
+                }
+              },
+              "queryRef": "Clients.Business_Number",
+              "nativeQueryRef": "Business_Number"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Ownership_Details"
+                }
+              },
+              "queryRef": "Clients.Ownership_Details",
+              "nativeQueryRef": "Ownership_Details"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Business_Start_Date"
+                }
+              },
+              "queryRef": "Clients.Business_Start_Date",
+              "nativeQueryRef": "Business_Start_Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Industry"
+                }
+              },
+              "queryRef": "Clients.Industry",
+              "nativeQueryRef": "Industry"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Business Details'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

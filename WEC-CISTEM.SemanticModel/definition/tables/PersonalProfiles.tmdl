@@ -1,0 +1,139 @@
+table PersonalProfiles
+	lineageTag: c4ad9acf-91aa-56b2-b8bf-dfd0d8ee2cea
+
+	column ProfileRowID
+		dataType: int64
+		isHidden
+		lineageTag: 187f46ce-9f51-59ce-afcd-c14f61ca56c2
+		summarizeBy: none
+		sourceColumn: ProfileRowID
+
+	column Primary_ID
+		dataType: int64
+		isHidden
+		lineageTag: a208c181-d3ef-5add-87d9-bdcd40f28618
+		summarizeBy: none
+		sourceColumn: Primary_ID
+
+	column Loan_ID
+		dataType: int64
+		lineageTag: 14f16d2d-4077-5305-a61f-66e7c7f21790
+		summarizeBy: none
+		sourceColumn: Loan_ID
+
+	column Name
+		dataType: string
+		lineageTag: 49fc600b-0af6-5966-9b1c-cdd1fce23ce6
+		summarizeBy: none
+		sourceColumn: Name
+
+	column Beacon
+		dataType: string
+		lineageTag: 646b1de3-53c6-56a1-93f8-fee18d4d4626
+		summarizeBy: none
+		sourceColumn: Beacon
+
+	column HAddress
+		dataType: string
+		lineageTag: 7e614c24-5c6b-525a-b4f0-6f05bc59f6a6
+		summarizeBy: none
+		sourceColumn: HAddress
+
+	column HCity
+		dataType: string
+		lineageTag: dd1e873f-3ccd-50a0-b21b-db2ff40ce8b7
+		summarizeBy: none
+		sourceColumn: HCity
+
+	column HProv
+		dataType: string
+		lineageTag: d4533df8-319b-56a6-9320-ff35e061a430
+		summarizeBy: none
+		sourceColumn: HProv
+
+	column HPC
+		dataType: string
+		lineageTag: c560457e-6f42-58bd-ba18-461d729323d5
+		summarizeBy: none
+		sourceColumn: HPC
+
+	column HomePhone
+		dataType: string
+		lineageTag: 36834cc6-a3a4-5035-a974-067267eb1142
+		summarizeBy: none
+		sourceColumn: HomePhone
+
+	column CellPhone
+		dataType: string
+		lineageTag: 4c1df261-c542-5d26-817f-98508c492a68
+		summarizeBy: none
+		sourceColumn: CellPhone
+
+	column Email
+		dataType: string
+		lineageTag: 289cec70-c58a-507a-a1fc-c3bd63f47ac1
+		summarizeBy: none
+		sourceColumn: Email
+
+	column DOB
+		dataType: dateTime
+		lineageTag: f3277238-14cd-56fc-9c27-213c3caec5c4
+		summarizeBy: none
+		sourceColumn: DOB
+
+	column PersonalCRA
+		dataType: string
+		lineageTag: 87e1c248-a98f-5426-b835-719bf30c6aa2
+		summarizeBy: none
+		sourceColumn: PersonalCRA
+
+	column PersonalCRAAmount
+		dataType: double
+		lineageTag: 8d56926f-271e-58fa-a4be-1bf9005dbf2c
+		summarizeBy: none
+		sourceColumn: PersonalCRAAmount
+
+	column FLG
+		dataType: boolean
+		lineageTag: fb79956b-544b-5761-a59d-8df2616a0775
+		summarizeBy: none
+		sourceColumn: FLG
+
+	column LLG
+		dataType: boolean
+		lineageTag: b457c7dd-7ce8-52d3-8baa-0e3fa0faa230
+		summarizeBy: none
+		sourceColumn: LLG
+
+	column Director
+		dataType: boolean
+		lineageTag: c566327e-c947-5c37-9760-61b338a8fb31
+		summarizeBy: none
+		sourceColumn: Director
+
+	column PPP
+		dataType: boolean
+		lineageTag: 489c6481-40e2-5180-8a7d-3a7d75030d2a
+		summarizeBy: none
+		sourceColumn: PPP
+
+	partition PersonalProfiles = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"ProfileRowID" = Int64.Type, #"Primary_ID" = Int64.Type, #"Loan_ID" = Int64.Type, #"Name" = text, #"Beacon" = text, #"HAddress" = text, #"HCity" = text, #"HProv" = text, #"HPC" = text, #"HomePhone" = text, #"CellPhone" = text, #"Email" = text, #"DOB" = date, #"PersonalCRA" = text, #"PersonalCRAAmount" = number, #"FLG" = logical, #"LLG" = logical, #"Director" = logical, #"PPP" = logical],
+			        {
+			                    {1, 101, 1, "Name-1", "Beacon-1", "HAddress-1", "HCity-1", "HProv-1", "HPC-1", "HomePhone-1", "CellPhone-1", "Email-1", #date(2023,1,1), "PersonalCRA-1", 1000.0, true, true, false, true},
+			                    {2, 102, 2, "Name-2", "Beacon-2", "HAddress-2", "HCity-2", "HProv-2", "HPC-2", "HomePhone-2", "CellPhone-2", "Email-2", #date(2024,2,2), "PersonalCRA-2", 2234.0, false, false, true, false},
+			                    {3, 103, 3, "Name-3", "Beacon-3", "HAddress-3", "HCity-3", "HProv-3", "HPC-3", "HomePhone-3", "CellPhone-3", "Email-3", #date(2023,3,3), "PersonalCRA-3", 3468.0, false, false, false, false},
+			                    {4, 104, 4, "Name-4", "Beacon-4", "HAddress-4", "HCity-4", "HProv-4", "HPC-4", "HomePhone-4", "CellPhone-4", "Email-4", #date(2024,4,4), "PersonalCRA-4", 4702.0, true, true, false, true},
+			                    {5, 105, 5, "Name-5", "Beacon-5", "HAddress-5", "HCity-5", "HProv-5", "HPC-5", "HomePhone-5", "CellPhone-5", "Email-5", #date(2023,5,5), "PersonalCRA-5", 5936.0, false, false, true, false},
+			                    {6, 106, 6, "Name-6", "Beacon-6", "HAddress-6", "HCity-6", "HProv-6", "HPC-6", "HomePhone-6", "CellPhone-6", "Email-6", #date(2024,6,6), "PersonalCRA-6", 7170.0, false, false, false, false},
+			                    {7, 107, 7, "Name-7", "Beacon-7", "HAddress-7", "HCity-7", "HProv-7", "HPC-7", "HomePhone-7", "CellPhone-7", "Email-7", #date(2023,7,7), "PersonalCRA-7", 8404.0, true, true, false, true},
+			                    {8, 108, 8, "Name-8", "Beacon-8", "HAddress-8", "HCity-8", "HProv-8", "HPC-8", "HomePhone-8", "CellPhone-8", "Email-8", #date(2024,8,8), "PersonalCRA-8", 9638.0, false, false, true, false}
+			        }
+			    )
+			in
+			    Source
+

@@ -1,0 +1,49 @@
+table BLIS
+	lineageTag: 1e567cc2-4df4-5118-90c7-2c666a23a99d
+
+	column BLISID
+		dataType: int64
+		isHidden
+		lineageTag: a1100367-2d2b-5ccb-8d5d-07e0162b9747
+		summarizeBy: none
+		sourceColumn: BLISID
+
+	column ClientID
+		dataType: int64
+		isHidden
+		lineageTag: 2de8c64d-8203-56eb-9897-81ca62c7e2cc
+		summarizeBy: none
+		sourceColumn: ClientID
+
+	column Notes
+		dataType: string
+		lineageTag: b2da55ec-661a-5ce8-b54c-fd4127edd3a2
+		summarizeBy: none
+		sourceColumn: Notes
+
+	column DateModified
+		dataType: dateTime
+		lineageTag: 1015cb52-a300-5978-afbe-4918734659fe
+		summarizeBy: none
+		sourceColumn: DateModified
+
+	partition BLIS = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"BLISID" = Int64.Type, #"ClientID" = Int64.Type, #"Notes" = text, #"DateModified" = date],
+			        {
+			                    {1, 101, "Sample note 1", #date(2023,1,1)},
+			                    {2, 102, "Sample note 2", #date(2024,2,2)},
+			                    {3, 103, "Sample note 3", #date(2023,3,3)},
+			                    {4, 104, "Sample note 4", #date(2024,4,4)},
+			                    {5, 105, "Sample note 5", #date(2023,5,5)},
+			                    {6, 106, "Sample note 6", #date(2024,6,6)},
+			                    {7, 107, "Sample note 7", #date(2023,7,7)},
+			                    {8, 108, "Sample note 8", #date(2024,8,8)}
+			        }
+			    )
+			in
+			    Source
+

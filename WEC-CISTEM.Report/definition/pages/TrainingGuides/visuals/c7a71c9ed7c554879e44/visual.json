@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c7a71c9ed7c554879e44",
+  "position": {
+    "x": 645,
+    "y": 262,
+    "z": 7,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "TotalAmtPaid"
+                }
+              },
+              "queryRef": "TrainingReg.TotalAmtPaid",
+              "nativeQueryRef": "TotalAmtPaid"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "HowDidYouHear"
+                }
+              },
+              "queryRef": "TrainingReg.HowDidYouHear",
+              "nativeQueryRef": "HowDidYouHear"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "Notes"
+                }
+              },
+              "queryRef": "TrainingReg.Notes",
+              "nativeQueryRef": "Notes"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Payment'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

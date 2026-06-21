@@ -1,0 +1,163 @@
+table Impact
+	lineageTag: 24af52f9-b225-5aa1-8f9e-d6ba12159e0c
+
+	column ID
+		dataType: int64
+		isHidden
+		lineageTag: 20ce352d-1d13-5be9-a5e7-8a99f5b65ecc
+		summarizeBy: none
+		sourceColumn: ID
+
+	column primaryid
+		dataType: int64
+		isHidden
+		lineageTag: 0d6dbc27-e274-597e-b2c7-5859ee6537e5
+		summarizeBy: none
+		sourceColumn: primaryid
+
+	column SurveyDate
+		dataType: dateTime
+		lineageTag: f8a118a2-dd7c-53dc-a6cf-0a0203cdde14
+		summarizeBy: none
+		sourceColumn: SurveyDate
+
+	column IsRunning
+		dataType: boolean
+		lineageTag: e2860cfd-cb01-5625-983f-b8385da4f4b8
+		summarizeBy: none
+		sourceColumn: IsRunning
+
+	column Revenue
+		dataType: double
+		lineageTag: 6fdabfa8-1005-56d0-a552-1ee847a289a9
+		summarizeBy: none
+		sourceColumn: Revenue
+
+	column Months
+		dataType: int64
+		lineageTag: 5a201693-66b3-5d8a-a52d-7322180b5cd0
+		summarizeBy: none
+		sourceColumn: Months
+
+	column ProfitsAvailable
+		dataType: boolean
+		lineageTag: 51e79d49-bf1a-586a-a661-4a73b3994ae0
+		summarizeBy: none
+		sourceColumn: ProfitsAvailable
+
+	column AsExpected
+		dataType: boolean
+		lineageTag: e76f161e-5fc4-5acf-9ac9-e4ab7ed117f0
+		summarizeBy: none
+		sourceColumn: AsExpected
+
+	column Employees
+		dataType: boolean
+		lineageTag: a8ae3a76-604c-5a50-9659-cb90989617cd
+		summarizeBy: none
+		sourceColumn: Employees
+
+	column FullTime
+		dataType: int64
+		lineageTag: cd29343d-2a26-54bd-8d53-b1a4739fd82a
+		summarizeBy: none
+		sourceColumn: FullTime
+
+	column PartTime
+		dataType: int64
+		lineageTag: f18e0c9c-9cbd-57f1-989c-c362fd5647d9
+		summarizeBy: none
+		sourceColumn: PartTime
+
+	column CurSkillGen
+		dataType: int64
+		lineageTag: dbd65ccb-b70c-5706-8e1c-4c9ddabd2fcb
+		summarizeBy: none
+		sourceColumn: CurSkillGen
+
+	column CurSkillIT
+		dataType: int64
+		lineageTag: 8617178d-bf75-5e78-8f6b-c580eac6c5fd
+		summarizeBy: none
+		sourceColumn: CurSkillIT
+
+	column CurSkillFin
+		dataType: int64
+		lineageTag: c37b825a-7b33-5def-a5af-ea1518e9ef28
+		summarizeBy: none
+		sourceColumn: CurSkillFin
+
+	column CurSkillHR
+		dataType: int64
+		lineageTag: 849db46c-f5aa-5b73-9505-01e6735bada2
+		summarizeBy: none
+		sourceColumn: CurSkillHR
+
+	column CurSkillMktg
+		dataType: int64
+		lineageTag: a6262020-4891-5954-a8e2-f06bd9ed46b2
+		summarizeBy: none
+		sourceColumn: CurSkillMktg
+
+	column TrainingSatisfaction
+		dataType: int64
+		lineageTag: d55d85d6-cc34-5996-aa8b-b0438ac5106b
+		summarizeBy: none
+		sourceColumn: TrainingSatisfaction
+
+	column CustService
+		dataType: int64
+		lineageTag: 5ea87b2d-7500-58f9-bd89-d14e1795b89d
+		summarizeBy: none
+		sourceColumn: CustService
+
+	column QualityServices
+		dataType: int64
+		lineageTag: 1621fa0d-6f08-5037-bfbc-9231291e1499
+		summarizeBy: none
+		sourceColumn: QualityServices
+
+	column MeetingNeeds
+		dataType: int64
+		lineageTag: a5f8a3c5-c61c-5fe3-bce3-cc115331c922
+		summarizeBy: none
+		sourceColumn: MeetingNeeds
+
+	column Accessible
+		dataType: int64
+		lineageTag: dd1c44a0-9588-56d9-b04e-27ddd8d10c68
+		summarizeBy: none
+		sourceColumn: Accessible
+
+	column Reliable
+		dataType: int64
+		lineageTag: d1ebf814-3852-5da2-b0b1-19ae5d882e1a
+		summarizeBy: none
+		sourceColumn: Reliable
+
+	column HowToImprove
+		dataType: string
+		lineageTag: dc23a083-676c-5878-a85a-9b78d0e646eb
+		summarizeBy: none
+		sourceColumn: HowToImprove
+
+	partition Impact = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"ID" = Int64.Type, #"primaryid" = Int64.Type, #"SurveyDate" = date, #"IsRunning" = logical, #"Revenue" = number, #"Months" = Int64.Type, #"ProfitsAvailable" = logical, #"AsExpected" = logical, #"Employees" = logical, #"FullTime" = Int64.Type, #"PartTime" = Int64.Type, #"CurSkillGen" = Int64.Type, #"CurSkillIT" = Int64.Type, #"CurSkillFin" = Int64.Type, #"CurSkillHR" = Int64.Type, #"CurSkillMktg" = Int64.Type, #"TrainingSatisfaction" = Int64.Type, #"CustService" = Int64.Type, #"QualityServices" = Int64.Type, #"MeetingNeeds" = Int64.Type, #"Accessible" = Int64.Type, #"Reliable" = Int64.Type, #"HowToImprove" = text],
+			        {
+			                    {1, 101, #date(2023,1,1), true, 80000.0, 1, false, false, true, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, "Sample note 1"},
+			                    {2, 102, #date(2024,2,2), false, 81234.0, 3, false, false, false, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, "Sample note 2"},
+			                    {3, 103, #date(2023,3,3), false, 82468.0, 5, true, true, false, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, "Sample note 3"},
+			                    {4, 104, #date(2024,4,4), true, 83702.0, 2, false, false, true, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, "Sample note 4"},
+			                    {5, 105, #date(2023,5,5), false, 84936.0, 4, false, false, false, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, "Sample note 5"},
+			                    {6, 106, #date(2024,6,6), false, 86170.0, 1, true, true, false, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, "Sample note 6"},
+			                    {7, 107, #date(2023,7,7), true, 87404.0, 3, false, false, true, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, "Sample note 7"},
+			                    {8, 108, #date(2024,8,8), false, 88638.0, 5, false, false, false, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, "Sample note 8"}
+			        }
+			    )
+			in
+			    Source
+

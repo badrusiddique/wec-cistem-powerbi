@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "90c8a7163f2750adbc82",
+  "position": {
+    "x": 8,
+    "y": 262,
+    "z": 6,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Salutation"
+                }
+              },
+              "queryRef": "Clients.Salutation",
+              "nativeQueryRef": "Salutation"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "First"
+                }
+              },
+              "queryRef": "Clients.First",
+              "nativeQueryRef": "First"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Last"
+                }
+              },
+              "queryRef": "Clients.Last",
+              "nativeQueryRef": "Last"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Company"
+                }
+              },
+              "queryRef": "Clients.Company",
+              "nativeQueryRef": "Company"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Partner"
+                }
+              },
+              "queryRef": "Clients.Partner",
+              "nativeQueryRef": "Partner"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Identity'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

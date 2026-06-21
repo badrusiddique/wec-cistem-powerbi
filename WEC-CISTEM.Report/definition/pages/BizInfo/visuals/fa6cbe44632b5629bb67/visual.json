@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "fa6cbe44632b5629bb67",
+  "position": {
+    "x": 857,
+    "y": 630,
+    "z": 15,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 15
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Business_Plan_Status"
+                }
+              },
+              "queryRef": "Clients.Business_Plan_Status",
+              "nativeQueryRef": "Business_Plan_Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Looking_For_Financing"
+                }
+              },
+              "queryRef": "Clients.Looking_For_Financing",
+              "nativeQueryRef": "Looking_For_Financing"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Financing_Amt"
+                }
+              },
+              "queryRef": "Clients.Financing_Amt",
+              "nativeQueryRef": "Financing_Amt"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Financing'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

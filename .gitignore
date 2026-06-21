@@ -1,0 +1,20 @@
+# Power BI local cache / per-user settings (machine-specific)
+**/.pbi/
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pbix
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local Parallels-VM deploy helpers (hardcode a specific VM) + scratch
+_vm_setup.ps1
+snap.ps1
+guest.png
+*.zip

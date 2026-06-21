@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "51ce31fdc81a57d796a0",
+  "position": {
+    "x": 8,
+    "y": 998,
+    "z": 21,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 21
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Court_Status"
+                }
+              },
+              "queryRef": "Clients.Court_Status",
+              "nativeQueryRef": "Court_Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Court_Date"
+                }
+              },
+              "queryRef": "Clients.Court_Date",
+              "nativeQueryRef": "Court_Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Court_Notes"
+                }
+              },
+              "queryRef": "Clients.Court_Notes",
+              "nativeQueryRef": "Court_Notes"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Business Court Search'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

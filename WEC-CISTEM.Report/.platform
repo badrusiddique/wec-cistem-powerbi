@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "WEC-CISTEM"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "886dc8a5-767f-56b6-ac4f-c87c0b4012d5"
+  }
+}

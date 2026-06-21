@@ -1,0 +1,54 @@
+table _Measures
+	lineageTag: 5d13f5c1-8bcb-51a0-a0a7-81fe8d66aed8
+
+	column _dummy
+		dataType: int64
+		isHidden
+		lineageTag: 7339a2d8-346d-52ef-b279-5a8b63f5891c
+		summarizeBy: none
+		sourceColumn: _dummy
+
+	measure '# Clients' = DISTINCTCOUNT(Clients[Primary_ID])
+		formatString: #,0
+		lineageTag: 6537124d-47d4-58d6-9094-4a4be6c45691
+
+	measure '# Loans' = COUNTROWS(Loans)
+		formatString: #,0
+		lineageTag: 87ac31b0-192d-5313-800b-cae541853d4c
+
+	measure 'Total Loan Approved' = SUM(Loans[Loan_Amount_Approved])
+		formatString: \$#,0
+		lineageTag: a34c8b8a-10e7-5582-808b-1bec93237a06
+
+	measure 'Total Disbursed' = SUM(Loans[DisbursalFirstAmount]) + SUM(Loans[DisbursalSecondAmount]) + SUM(Loans[DisbursalThirdAmount])
+		formatString: \$#,0
+		lineageTag: 67b3a1d6-11f8-587e-aadb-a5ff28f1110b
+
+	measure 'Jobs Created' = SUM(Clients[Jobs_Created])
+		formatString: #,0
+		lineageTag: 25a3addd-8e8b-5a20-bb74-da066f454a1e
+
+	measure 'Jobs Maintained' = SUM(Clients[Jobs_Maintained])
+		formatString: #,0
+		lineageTag: 787c5941-4cba-53d6-bab5-2ee8517b8a19
+
+	measure '# Contacts' = COUNTROWS(ContactTracking)
+		formatString: #,0
+		lineageTag: 6900917d-52ae-5514-b374-085633302fa0
+
+	measure '# Training Regs' = COUNTROWS(TrainingReg)
+		formatString: #,0
+		lineageTag: bfd3652d-aa28-58db-84e0-afbc69599129
+
+	measure 'Avg Annual Revenue' = AVERAGE(Clients[Annual_Revenue])
+		formatString: \$#,0
+		lineageTag: 9ba6cc6e-d5bd-5b29-b8e1-b0af7d17f180
+
+	partition _Measures = m
+		mode: import
+		source =
+			let
+			    Source = #table(type table [_dummy = Int64.Type], {{1}})
+			in
+			    Source
+

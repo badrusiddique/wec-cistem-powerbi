@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "de1e340a0dc758e5a085",
+  "position": {
+    "x": 8,
+    "y": 262,
+    "z": 6,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "Loan_Number"
+                }
+              },
+              "queryRef": "Loans.Loan_Number",
+              "nativeQueryRef": "Loan_Number"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "Input_Date"
+                }
+              },
+              "queryRef": "Loans.Input_Date",
+              "nativeQueryRef": "Input_Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "Fund_Usage"
+                }
+              },
+              "queryRef": "Loans.Fund_Usage",
+              "nativeQueryRef": "Fund_Usage"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "Purpose_of_Loan"
+                }
+              },
+              "queryRef": "Loans.Purpose_of_Loan",
+              "nativeQueryRef": "Purpose_of_Loan"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "Loan_Amount_Approved"
+                }
+              },
+              "queryRef": "Loans.Loan_Amount_Approved",
+              "nativeQueryRef": "Loan_Amount_Approved"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Loan'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

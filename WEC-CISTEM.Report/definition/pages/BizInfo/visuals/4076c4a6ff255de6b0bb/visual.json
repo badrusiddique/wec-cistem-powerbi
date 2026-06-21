@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "4076c4a6ff255de6b0bb",
+  "position": {
+    "x": 645,
+    "y": 1154,
+    "z": 26,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 26
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientPhones"
+                    }
+                  },
+                  "Property": "PhoneNum"
+                }
+              },
+              "queryRef": "ClientPhones.PhoneNum",
+              "nativeQueryRef": "PhoneNum"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientPhones"
+                    }
+                  },
+                  "Property": "PhoneDesc"
+                }
+              },
+              "queryRef": "ClientPhones.PhoneDesc",
+              "nativeQueryRef": "PhoneDesc"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientPhones"
+                    }
+                  },
+                  "Property": "PhoneNotes"
+                }
+              },
+              "queryRef": "ClientPhones.PhoneNotes",
+              "nativeQueryRef": "PhoneNotes"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientPhones"
+                    }
+                  },
+                  "Property": "Primary"
+                }
+              },
+              "queryRef": "ClientPhones.Primary",
+              "nativeQueryRef": "Primary"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientPhones"
+                    }
+                  },
+                  "Property": "LocID"
+                }
+              },
+              "queryRef": "ClientPhones.LocID",
+              "nativeQueryRef": "LocID"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Phones'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

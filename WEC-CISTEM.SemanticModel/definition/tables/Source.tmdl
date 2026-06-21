@@ -1,0 +1,38 @@
+table Source
+	lineageTag: ab7401b6-e3db-5b97-900e-749584189144
+
+	column SID
+		dataType: int64
+		isHidden
+		lineageTag: 2952b90b-6c7e-5457-8010-de5eb283656e
+		summarizeBy: none
+		sourceColumn: SID
+
+	column Source
+		dataType: string
+		lineageTag: d89357e0-1a23-5727-9ca7-0b0813c23cae
+		summarizeBy: none
+		sourceColumn: Source
+
+	column Description
+		dataType: string
+		lineageTag: de0e1a90-dd00-507a-ad0c-ef404dbd31ec
+		summarizeBy: none
+		sourceColumn: Description
+
+	partition Source = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"SID" = Int64.Type, #"Source" = text, #"Description" = text],
+			        {
+			                    {1, "Web", "Web source"},
+			                    {2, "Referral", "Referral source"},
+			                    {3, "Event", "Event source"},
+			                    {4, "Walk-in", "Walk-in source"}
+			        }
+			    )
+			in
+			    Source
+

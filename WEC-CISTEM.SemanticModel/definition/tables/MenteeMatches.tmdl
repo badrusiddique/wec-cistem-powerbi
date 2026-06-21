@@ -1,0 +1,79 @@
+table MenteeMatches
+	lineageTag: 60db290c-a6ee-5152-9d57-4550f71af1b7
+
+	column MenteeRowID
+		dataType: int64
+		isHidden
+		lineageTag: fb49f388-2d90-56a2-ba53-7c1cd803a0ea
+		summarizeBy: none
+		sourceColumn: MenteeRowID
+
+	column ClientID
+		dataType: int64
+		isHidden
+		lineageTag: bcfaef28-1387-54a4-a131-80f2e0e1ce97
+		summarizeBy: none
+		sourceColumn: ClientID
+
+	column ActiveMentxx
+		dataType: boolean
+		lineageTag: 884275f8-26e6-53e2-84ca-150e239bc936
+		summarizeBy: none
+		sourceColumn: ActiveMentxx
+
+	column challengeset
+		dataType: string
+		lineageTag: 617450f6-c28d-5e79-b575-47af447e3776
+		summarizeBy: none
+		sourceColumn: challengeset
+
+	column challenge1
+		dataType: string
+		lineageTag: da000d1a-e700-5a2f-96ab-e58a38d14971
+		summarizeBy: none
+		sourceColumn: challenge1
+
+	column challenge2
+		dataType: string
+		lineageTag: f4280e3b-94ab-50c1-b829-a636bc086a28
+		summarizeBy: none
+		sourceColumn: challenge2
+
+	column OneToOneRank
+		dataType: int64
+		lineageTag: 43db5856-45e3-530a-b62e-c2343b43765a
+		summarizeBy: none
+		sourceColumn: OneToOneRank
+
+	column PeerRank
+		dataType: int64
+		lineageTag: 87c44764-6876-5c8d-b4a2-29eb5cc3c6c1
+		summarizeBy: none
+		sourceColumn: PeerRank
+
+	column ForumRank
+		dataType: int64
+		lineageTag: b9bfd851-c971-5026-a7a5-f3cc05957566
+		summarizeBy: none
+		sourceColumn: ForumRank
+
+	partition MenteeMatches = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"MenteeRowID" = Int64.Type, #"ClientID" = Int64.Type, #"ActiveMentxx" = logical, #"challengeset" = text, #"challenge1" = text, #"challenge2" = text, #"OneToOneRank" = Int64.Type, #"PeerRank" = Int64.Type, #"ForumRank" = Int64.Type],
+			        {
+			                    {1, 101, true, "challengeset-1", "challenge1-1", "challenge2-1", 1, 1, 1},
+			                    {2, 102, false, "challengeset-2", "challenge1-2", "challenge2-2", 3, 3, 3},
+			                    {3, 103, false, "challengeset-3", "challenge1-3", "challenge2-3", 5, 5, 5},
+			                    {4, 104, true, "challengeset-4", "challenge1-4", "challenge2-4", 2, 2, 2},
+			                    {5, 105, false, "challengeset-5", "challenge1-5", "challenge2-5", 4, 4, 4},
+			                    {6, 106, false, "challengeset-6", "challenge1-6", "challenge2-6", 1, 1, 1},
+			                    {7, 107, true, "challengeset-7", "challenge1-7", "challenge2-7", 3, 3, 3},
+			                    {8, 108, false, "challengeset-8", "challenge1-8", "challenge2-8", 5, 5, 5}
+			        }
+			    )
+			in
+			    Source
+

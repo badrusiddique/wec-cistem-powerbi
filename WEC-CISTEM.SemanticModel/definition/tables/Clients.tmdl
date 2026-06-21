@@ -1,0 +1,840 @@
+table Clients
+	lineageTag: 106df92a-9bd3-5cb2-b20a-57b95b27af43
+
+	column Primary_ID
+		dataType: int64
+		isHidden
+		lineageTag: bf33035d-020f-5ec5-a481-69e10d72bfaa
+		summarizeBy: none
+		sourceColumn: Primary_ID
+
+	column Date
+		dataType: dateTime
+		lineageTag: b19f22b1-7821-5f92-b88b-d420d3018f8c
+		summarizeBy: none
+		sourceColumn: Date
+
+	column DateModified
+		dataType: dateTime
+		lineageTag: 7f82cda9-c1e8-5486-98b5-128b19271f5c
+		summarizeBy: none
+		sourceColumn: DateModified
+
+	column Salutation
+		dataType: string
+		lineageTag: 281f7724-788c-521c-ad81-b9f05aa42bbb
+		summarizeBy: none
+		sourceColumn: Salutation
+
+	column First
+		dataType: string
+		lineageTag: 99381a94-28e2-519b-ab54-67b7be8e17c8
+		summarizeBy: none
+		sourceColumn: First
+
+	column Last
+		dataType: string
+		lineageTag: 3e26b5f1-aa69-5fe0-8be0-077bb076ac32
+		summarizeBy: none
+		sourceColumn: Last
+
+	column Company
+		dataType: string
+		lineageTag: 3ec8d393-2a1b-594c-a4d0-c1b1f73c41d7
+		summarizeBy: none
+		sourceColumn: Company
+
+	column Partner
+		dataType: string
+		lineageTag: 556e6475-4823-5808-9e60-3a2c2c3ea971
+		summarizeBy: none
+		sourceColumn: Partner
+
+	column Principal_Language
+		dataType: string
+		lineageTag: 25a7c324-cd6f-5a51-b09b-d77b7403caa1
+		summarizeBy: none
+		sourceColumn: Principal_Language
+
+	column File_Location
+		dataType: string
+		lineageTag: 54c02110-a7ea-530a-afb1-2559473b3cd3
+		summarizeBy: none
+		sourceColumn: File_Location
+
+	column Client
+		dataType: boolean
+		lineageTag: 3c270e42-d53f-5dd6-b810-ba24b96e2fb6
+		summarizeBy: none
+		sourceColumn: Client
+
+	column Inactive_Record
+		dataType: boolean
+		lineageTag: 1a8029a4-3107-5742-bd8a-6e84e7ff5f16
+		summarizeBy: none
+		sourceColumn: Inactive_Record
+
+	column Business_Closed
+		dataType: boolean
+		lineageTag: 959b5404-0f4a-597c-ae47-89d66d15dac1
+		summarizeBy: none
+		sourceColumn: Business_Closed
+
+	column WESBCInitiated
+		dataType: boolean
+		lineageTag: 18fa0a10-4c43-57c7-90a6-40350643cacd
+		summarizeBy: none
+		sourceColumn: WESBCInitiated
+
+	column Newsletter_Recipient
+		dataType: boolean
+		lineageTag: a665e821-8c1e-52ed-a7bd-b1e5aa98d80c
+		summarizeBy: none
+		sourceColumn: Newsletter_Recipient
+
+	column Address
+		dataType: string
+		lineageTag: 1e2115a5-5819-5f38-b3e2-f136dfbb49dd
+		summarizeBy: none
+		sourceColumn: Address
+
+	column City
+		dataType: string
+		lineageTag: b22c242b-af08-5cda-a79b-e87a5b0fbdb0
+		summarizeBy: none
+		sourceColumn: City
+
+	column Province
+		dataType: string
+		lineageTag: d5849d1e-2363-5a8f-a8ea-9f21d8d7bc42
+		summarizeBy: none
+		sourceColumn: Province
+
+	column Postal_Code
+		dataType: string
+		lineageTag: 42008bf6-2aed-5d22-b9fa-d5bc759d4552
+		summarizeBy: none
+		sourceColumn: Postal_Code
+
+	column Region
+		dataType: string
+		lineageTag: b5071c52-67de-5cba-8a84-3163d811dbd5
+		summarizeBy: none
+		sourceColumn: Region
+
+	column Location
+		dataType: string
+		lineageTag: 7a70e225-6119-5b89-be6c-ba57caedf54d
+		summarizeBy: none
+		sourceColumn: Location
+
+	column Counsellor_Assigned
+		dataType: string
+		lineageTag: 6ecc651f-555b-587d-9d0f-39cd455b2425
+		summarizeBy: none
+		sourceColumn: Counsellor_Assigned
+
+	column Loan_Admin_Assigned
+		dataType: string
+		lineageTag: b0c96998-2688-5ea6-b701-b175f13e0278
+		summarizeBy: none
+		sourceColumn: Loan_Admin_Assigned
+
+	column Business_Phone
+		dataType: string
+		lineageTag: 01fcc5b0-8500-5d48-8dc9-af1e8c7a0dc3
+		summarizeBy: none
+		sourceColumn: Business_Phone
+
+	column Email
+		dataType: string
+		lineageTag: 8f6f53eb-d52d-51ef-80c7-67b7a3029fa4
+		summarizeBy: none
+		sourceColumn: Email
+
+	column AltEMail
+		dataType: string
+		lineageTag: e4ebcb55-7eaa-5a9a-b6b3-f3144b64966d
+		summarizeBy: none
+		sourceColumn: AltEMail
+
+	column Website
+		dataType: string
+		lineageTag: a7ec67a9-6e18-51b2-8228-6a032d67318f
+		summarizeBy: none
+		sourceColumn: Website
+
+	column Source
+		dataType: string
+		lineageTag: b2185254-8a24-58c6-a4f4-63361bc0ba08
+		summarizeBy: none
+		sourceColumn: Source
+
+	column SourceID
+		dataType: int64
+		lineageTag: 189795ea-4be7-5ccb-ba7c-89844a4926a4
+		summarizeBy: none
+		sourceColumn: SourceID
+
+	column Referral
+		dataType: string
+		lineageTag: b3c46d64-9274-5827-a10d-603cc5da5a97
+		summarizeBy: none
+		sourceColumn: Referral
+
+	column ReferralID
+		dataType: int64
+		lineageTag: 83d6fb85-fd2d-5dba-b4b0-3cc3b276b449
+		summarizeBy: none
+		sourceColumn: ReferralID
+
+	column Aboriginal
+		dataType: boolean
+		lineageTag: 711c27a5-951a-5e2e-b210-aaf5cd40f5cd
+		summarizeBy: none
+		sourceColumn: Aboriginal
+
+	column Visible_Minority
+		dataType: boolean
+		lineageTag: 08df7b9c-7168-5ecc-85a1-e34e6d062710
+		summarizeBy: none
+		sourceColumn: Visible_Minority
+
+	column Youth
+		dataType: boolean
+		lineageTag: f198c50d-d431-5ce4-b10a-060796133699
+		summarizeBy: none
+		sourceColumn: Youth
+
+	column Child_Senior
+		dataType: boolean
+		lineageTag: af5b3010-7c26-5e82-9ec4-7cc343c92b5e
+		summarizeBy: none
+		sourceColumn: Child_Senior
+
+	column Disabled
+		dataType: boolean
+		lineageTag: 6ee5ae01-27f6-55f4-b8f5-a060a753936f
+		summarizeBy: none
+		sourceColumn: Disabled
+
+	column EI_Recipient
+		dataType: boolean
+		lineageTag: 537018d7-5461-574d-92a4-c92f731bcc54
+		summarizeBy: none
+		sourceColumn: EI_Recipient
+
+	column Social_Assistance
+		dataType: boolean
+		lineageTag: 642fba28-ab11-5149-a0d1-e2ddee564afd
+		summarizeBy: none
+		sourceColumn: Social_Assistance
+
+	column Employed
+		dataType: boolean
+		lineageTag: f4c419d3-b4ad-5322-a933-db5cbfa9ec21
+		summarizeBy: none
+		sourceColumn: Employed
+
+	column Age
+		dataType: int64
+		lineageTag: af8c55af-a999-5ada-8fc6-d2ef5a3b06d0
+		summarizeBy: none
+		sourceColumn: Age
+
+	column Programs
+		dataType: string
+		lineageTag: 7357ae65-a8d4-5987-8a7d-7b51e3f0e32b
+		summarizeBy: none
+		sourceColumn: Programs
+
+	column Business_Status
+		dataType: string
+		lineageTag: ba1a0797-cdaa-5289-b405-02b581c6bb17
+		summarizeBy: none
+		sourceColumn: Business_Status
+
+	column Years_in_Business
+		dataType: int64
+		lineageTag: 905ce110-4a67-52e7-b8f3-34f2d2bdef27
+		summarizeBy: none
+		sourceColumn: Years_in_Business
+
+	column Business_Start_Date
+		dataType: dateTime
+		lineageTag: afffc86a-8c92-5322-998a-ff3a90fce747
+		summarizeBy: none
+		sourceColumn: Business_Start_Date
+
+	column Number_ofEmployees
+		dataType: int64
+		lineageTag: 4f237718-9d97-5204-aad6-ac8593571800
+		summarizeBy: none
+		sourceColumn: Number_ofEmployees
+
+	column Jobs_Created
+		dataType: double
+		lineageTag: 795c810d-8cc4-54d5-b20f-8f422c1fd771
+		summarizeBy: none
+		sourceColumn: Jobs_Created
+
+	column Jobs_Maintained
+		dataType: double
+		lineageTag: 783aa324-2fb8-556b-9b6e-8e7cd2f11cde
+		summarizeBy: none
+		sourceColumn: Jobs_Maintained
+
+	column Business_Structure
+		dataType: string
+		lineageTag: 6e8cd372-6255-59bf-8297-0a72f02c20d3
+		summarizeBy: none
+		sourceColumn: Business_Structure
+
+	column Business_Sector
+		dataType: string
+		lineageTag: c4b26fe4-a376-566b-8bf1-c53a5f00ae56
+		summarizeBy: none
+		sourceColumn: Business_Sector
+
+	column Business_Description
+		dataType: string
+		lineageTag: 54a2ddce-0377-542f-9227-24281bc12ea6
+		summarizeBy: none
+		sourceColumn: Business_Description
+
+	column Industry
+		dataType: int64
+		lineageTag: 1db18787-1d9d-5c13-ba2a-9233789cf5ff
+		summarizeBy: none
+		sourceColumn: Industry
+
+	column Home_Based
+		dataType: int64
+		lineageTag: 6c11897f-b55a-5fba-be25-37ea3eb61d1f
+		summarizeBy: none
+		sourceColumn: Home_Based
+
+	column Franchise
+		dataType: boolean
+		lineageTag: 38a86377-e10f-5667-a55c-329acd8cf5f6
+		summarizeBy: none
+		sourceColumn: Franchise
+
+	column Import_Export
+		dataType: boolean
+		lineageTag: c8bee320-9556-5c6b-8802-d0b2232865ea
+		summarizeBy: none
+		sourceColumn: Import_Export
+
+	column Distributor_Agent
+		dataType: boolean
+		lineageTag: a4b39833-d704-5e4e-a47c-a00b798d5f11
+		summarizeBy: none
+		sourceColumn: Distributor_Agent
+
+	column Manufacturing
+		dataType: boolean
+		lineageTag: 0612cd62-23ba-5680-9075-cd65735115bd
+		summarizeBy: none
+		sourceColumn: Manufacturing
+
+	column Retail
+		dataType: boolean
+		lineageTag: 5e52f6f8-7d53-5f59-8f49-ba2669ad77b5
+		summarizeBy: none
+		sourceColumn: Retail
+
+	column Service
+		dataType: boolean
+		lineageTag: 50ac44b2-5b96-57e4-bc6e-24e6a21d0236
+		summarizeBy: none
+		sourceColumn: Service
+
+	column Professional
+		dataType: boolean
+		lineageTag: 5ac5a39b-3695-5898-8ca8-4107ad32f4a6
+		summarizeBy: none
+		sourceColumn: Professional
+
+	column Annual_Revenue
+		dataType: int64
+		lineageTag: d2fa3b9a-e4bc-5804-b03b-85fb017f70c1
+		summarizeBy: none
+		sourceColumn: Annual_Revenue
+
+	column Date_of_Birth
+		dataType: dateTime
+		lineageTag: 227ae6c2-6107-59e1-9aad-9fa50d3ff030
+		summarizeBy: none
+		sourceColumn: Date_of_Birth
+
+	column Marital_Status
+		dataType: string
+		lineageTag: 07eba158-781a-5f77-a609-3d0f492062dd
+		summarizeBy: none
+		sourceColumn: Marital_Status
+
+	column Dependants
+		dataType: int64
+		lineageTag: 48c003c9-66b7-56bc-8186-1e12abfa3822
+		summarizeBy: none
+		sourceColumn: Dependants
+
+	column SIN
+		dataType: string
+		lineageTag: fa85a91f-b97a-5d2b-8b73-0af030d5dc74
+		summarizeBy: none
+		sourceColumn: SIN
+
+	column HAddress
+		dataType: string
+		lineageTag: 4c098052-9e9c-51de-8d5f-3b69b2ad95a9
+		summarizeBy: none
+		sourceColumn: HAddress
+
+	column HCity
+		dataType: string
+		lineageTag: 699cd187-28da-5ea6-96ea-1ba085245664
+		summarizeBy: none
+		sourceColumn: HCity
+
+	column HProv
+		dataType: string
+		lineageTag: 8eb019af-33ac-5553-9653-46351f316b79
+		summarizeBy: none
+		sourceColumn: HProv
+
+	column HPC
+		dataType: string
+		lineageTag: 65b77eac-159a-5a14-b10a-fb01b078c9a3
+		summarizeBy: none
+		sourceColumn: HPC
+
+	column Home_Phone
+		dataType: string
+		lineageTag: 61424c34-2d98-5a12-8579-0de50c0ebe7e
+		summarizeBy: none
+		sourceColumn: Home_Phone
+
+	column Entrepreneurial_Experience
+		dataType: boolean
+		lineageTag: f156d3f0-d4f0-52c6-8dbd-ac5bbc6877c9
+		summarizeBy: none
+		sourceColumn: Entrepreneurial_Experience
+
+	column Related_Experience
+		dataType: boolean
+		lineageTag: 7308da6f-ce7b-5260-bece-6aedfc7ccbdc
+		summarizeBy: none
+		sourceColumn: Related_Experience
+
+	column Bankruptcy
+		dataType: boolean
+		lineageTag: 274801f5-5cec-5013-a31d-b6a1511e09a9
+		summarizeBy: none
+		sourceColumn: Bankruptcy
+
+	column Education
+		dataType: string
+		lineageTag: 43cb7e34-917a-5081-ae75-502965b290b8
+		summarizeBy: none
+		sourceColumn: Education
+
+	column Spouse_Name
+		dataType: string
+		lineageTag: 8b54dbe6-1ee3-5552-b9dc-6df808574ac0
+		summarizeBy: none
+		sourceColumn: Spouse_Name
+
+	column Contact_Date
+		dataType: dateTime
+		lineageTag: e1aac860-2c7c-5d25-afcd-b6738befb000
+		summarizeBy: none
+		sourceColumn: Contact_Date
+
+	column Notes
+		dataType: string
+		lineageTag: 25a8e536-57f3-5dc5-b4a5-ec75a8bc583e
+		summarizeBy: none
+		sourceColumn: Notes
+
+	column Promo_Ack_Rel_Recd
+		dataType: boolean
+		lineageTag: 384b1f81-a32c-5a21-9ad9-ecd39fd0365d
+		summarizeBy: none
+		sourceColumn: Promo_Ack_Rel_Recd
+
+	column Promo_Consent_Status
+		dataType: string
+		lineageTag: 83c5c5ee-b087-506c-b6df-18b2868e5d22
+		summarizeBy: none
+		sourceColumn: Promo_Consent_Status
+
+	column Promo_Consent_Date
+		dataType: dateTime
+		lineageTag: 1878eda7-003c-5b3d-ac71-a8cec3e43330
+		summarizeBy: none
+		sourceColumn: Promo_Consent_Date
+
+	column Photo_Bio_Release
+		dataType: boolean
+		lineageTag: d78d1e06-c867-5e04-be3d-6dfb7cd1030c
+		summarizeBy: none
+		sourceColumn: Photo_Bio_Release
+
+	column Testimonial_On_File
+		dataType: boolean
+		lineageTag: 6f35e4cc-ca69-5bad-8f4e-bde64b9d68ea
+		summarizeBy: none
+		sourceColumn: Testimonial_On_File
+
+	column Storyteller
+		dataType: boolean
+		lineageTag: 7b6436a2-7e16-5fb9-9453-68a2c9da173a
+		summarizeBy: none
+		sourceColumn: Storyteller
+
+	column Francophone
+		dataType: boolean
+		lineageTag: 31cb3d1a-9524-5e76-83f2-2282b5979778
+		summarizeBy: none
+		sourceColumn: Francophone
+
+	column LGBTQIA2S
+		dataType: boolean
+		lineageTag: ef6eed4f-088d-5bb3-ae9b-a502f5a01517
+		summarizeBy: none
+		sourceColumn: LGBTQIA2S
+
+	column Immigrant_NewCanadian_Refugee
+		dataType: boolean
+		lineageTag: d9dce3df-4626-5fa1-a3ba-8f84c4d0fd78
+		summarizeBy: none
+		sourceColumn: Immigrant_NewCanadian_Refugee
+
+	column Age_Under30
+		dataType: boolean
+		lineageTag: a56ca608-1107-51c4-bc5f-4ea839d5038c
+		summarizeBy: none
+		sourceColumn: Age_Under30
+
+	column Age_30_39
+		dataType: boolean
+		lineageTag: 7363a325-35c5-5e37-af86-39c5b6f881eb
+		summarizeBy: none
+		sourceColumn: Age_30_39
+
+	column Age_40_44
+		dataType: boolean
+		lineageTag: 9c5f721e-9be3-53d5-b14b-de7b1c6a7d36
+		summarizeBy: none
+		sourceColumn: Age_40_44
+
+	column Age_45_54
+		dataType: boolean
+		lineageTag: dcc8b442-8890-53fc-80b1-fb3e7117a740
+		summarizeBy: none
+		sourceColumn: Age_45_54
+
+	column Age_Over55
+		dataType: boolean
+		lineageTag: af03f475-0bb6-5a40-9b64-79c497d9f0d0
+		summarizeBy: none
+		sourceColumn: Age_Over55
+
+	column WEConnect
+		dataType: boolean
+		lineageTag: d101c35e-ac22-5060-858e-a17aa51e2c8c
+		summarizeBy: none
+		sourceColumn: WEConnect
+
+	column WEConnect_Cert_By
+		dataType: string
+		lineageTag: 4aa271f5-9c87-54f1-80d4-5058c68e78b2
+		summarizeBy: none
+		sourceColumn: WEConnect_Cert_By
+
+	column Growth_Client
+		dataType: boolean
+		lineageTag: bb80a244-2734-5987-86e6-579b6cd91031
+		summarizeBy: none
+		sourceColumn: Growth_Client
+
+	column NDIT
+		dataType: boolean
+		lineageTag: 412e40cc-9a15-52e7-8d64-ec9a235d117d
+		summarizeBy: none
+		sourceColumn: NDIT
+
+	column NDIT_On_Date
+		dataType: dateTime
+		lineageTag: b054ec7b-750f-5126-b218-0155947bf8c4
+		summarizeBy: none
+		sourceColumn: NDIT_On_Date
+
+	column Status
+		dataType: string
+		lineageTag: 5000cd10-dfac-5b1f-83fe-c84696e6bb4c
+		summarizeBy: none
+		sourceColumn: Status
+
+	column Via
+		dataType: string
+		lineageTag: 20926ad7-0481-5e9d-bd3f-b85d88a5453d
+		summarizeBy: none
+		sourceColumn: Via
+
+	column Updated
+		dataType: dateTime
+		lineageTag: 352514d5-adad-5e9e-91a1-9c24d108f9a4
+		summarizeBy: none
+		sourceColumn: Updated
+
+	column Updated_By
+		dataType: string
+		lineageTag: e581dea6-9dc7-59ee-a19c-42cce944cfd5
+		summarizeBy: none
+		sourceColumn: Updated_By
+
+	column Referral_Recd
+		dataType: boolean
+		lineageTag: fb3e9615-efdb-5abe-82b4-030365957a18
+		summarizeBy: none
+		sourceColumn: Referral_Recd
+
+	column Loan_Recd
+		dataType: boolean
+		lineageTag: 7f277ee3-2b64-51ac-9ce2-8f0506038a30
+		summarizeBy: none
+		sourceColumn: Loan_Recd
+
+	column Pending_Recd
+		dataType: boolean
+		lineageTag: 853c7fbd-ab41-58d7-be92-70406980ef50
+		summarizeBy: none
+		sourceColumn: Pending_Recd
+
+	column CFDC
+		dataType: string
+		lineageTag: a2b0fc97-3e22-5eeb-871b-39561dc98db8
+		summarizeBy: none
+		sourceColumn: CFDC
+
+	column EMWE
+		dataType: string
+		lineageTag: b5968c54-2601-5cdc-8c88-5d07e740606a
+		summarizeBy: none
+		sourceColumn: EMWE
+
+	column C3
+		dataType: string
+		lineageTag: ca609f1e-12c7-5c7b-9e1b-9d9b47beca41
+		summarizeBy: none
+		sourceColumn: C3
+
+	column C3_Industry
+		dataType: string
+		lineageTag: 9ceb0a9a-d803-5f72-aef4-a8b049eeb62b
+		summarizeBy: none
+		sourceColumn: C3_Industry
+
+	column Tourism_Operator
+		dataType: boolean
+		lineageTag: b96cfa12-d9ff-50b3-8c53-112f3a00587c
+		summarizeBy: none
+		sourceColumn: Tourism_Operator
+
+	column Manufacturing_PPE
+		dataType: boolean
+		lineageTag: 61219cf8-ca92-5240-aece-12458bdd3a8e
+		summarizeBy: none
+		sourceColumn: Manufacturing_PPE
+
+	column Commercial_Outlet
+		dataType: boolean
+		lineageTag: e0fed47c-47d9-5cb5-a2ed-0d016da1e3eb
+		summarizeBy: none
+		sourceColumn: Commercial_Outlet
+
+	column Send_Via
+		dataType: string
+		lineageTag: 604a62c6-21e3-5fcb-ad96-4c24966ebd9a
+		summarizeBy: none
+		sourceColumn: Send_Via
+
+	column Planner
+		dataType: string
+		lineageTag: d954a123-6a03-54a5-b3a0-f709f3f643fe
+		summarizeBy: none
+		sourceColumn: Planner
+
+	column Bus_Analyst
+		dataType: string
+		lineageTag: fc1c17fa-d210-5ca8-878f-5aa50a9f8bce
+		summarizeBy: none
+		sourceColumn: Bus_Analyst
+
+	column Referral_Name
+		dataType: string
+		lineageTag: 29667095-f087-5407-8136-b58ac55688d6
+		summarizeBy: none
+		sourceColumn: Referral_Name
+
+	column Business_Plan_Status
+		dataType: string
+		lineageTag: dc6617e7-f2de-5626-a72e-13225ec9c8e0
+		summarizeBy: none
+		sourceColumn: Business_Plan_Status
+
+	column Looking_For_Financing
+		dataType: string
+		lineageTag: bd738054-b28b-5bb5-bfc8-8d98aaa07e9e
+		summarizeBy: none
+		sourceColumn: Looking_For_Financing
+
+	column Financing_Amt
+		dataType: double
+		lineageTag: 46c2154d-a08a-5c4f-9d70-301b58ca206d
+		summarizeBy: none
+		sourceColumn: Financing_Amt
+
+	column Contact_Notes
+		dataType: string
+		lineageTag: 604c56e2-607e-5df6-b734-1a3326be62b5
+		summarizeBy: none
+		sourceColumn: Contact_Notes
+
+	column Business_Number
+		dataType: string
+		lineageTag: 3e617d0b-eeba-5fb2-aa1d-1ba89e34a47f
+		summarizeBy: none
+		sourceColumn: Business_Number
+
+	column Ownership_Details
+		dataType: string
+		lineageTag: 931f494c-bd99-55be-87e3-66f74d580d29
+		summarizeBy: none
+		sourceColumn: Ownership_Details
+
+	column Social_Enterprise
+		dataType: boolean
+		lineageTag: 8165334e-35d6-5c71-85d1-1b1d93d65b2d
+		summarizeBy: none
+		sourceColumn: Social_Enterprise
+
+	column Interested_In_Mentor
+		dataType: boolean
+		lineageTag: 5ce24271-bdf1-5dbb-8d48-5dc8c0e83132
+		summarizeBy: none
+		sourceColumn: Interested_In_Mentor
+
+	column B2B
+		dataType: boolean
+		lineageTag: 5a18c20b-1a54-589c-81c0-01978b5a5143
+		summarizeBy: none
+		sourceColumn: B2B
+
+	column B2C
+		dataType: boolean
+		lineageTag: 4610a4f6-e369-5fca-ad0a-1f5b4f7e0d98
+		summarizeBy: none
+		sourceColumn: B2C
+
+	column Jobs_Expanded
+		dataType: double
+		lineageTag: 80c06210-d5c2-597e-9223-16b64560278c
+		summarizeBy: none
+		sourceColumn: Jobs_Expanded
+
+	column Court_Status
+		dataType: string
+		lineageTag: c308219e-f213-599c-a732-1781dd8b9971
+		summarizeBy: none
+		sourceColumn: Court_Status
+
+	column Court_Date
+		dataType: dateTime
+		lineageTag: 545494ba-3575-51e9-a696-f0c7d6d12eba
+		summarizeBy: none
+		sourceColumn: Court_Date
+
+	column Court_Notes
+		dataType: string
+		lineageTag: 8fbccb8e-78a1-5236-a258-ef79262ceb9a
+		summarizeBy: none
+		sourceColumn: Court_Notes
+
+	column CRA_Status
+		dataType: string
+		lineageTag: ff07c7c5-f8e4-555f-a0c8-cd73599ea74a
+		summarizeBy: none
+		sourceColumn: CRA_Status
+
+	column CRA_Date
+		dataType: dateTime
+		lineageTag: 3d5b0e70-714d-5503-aa8b-d15e5c9f408a
+		summarizeBy: none
+		sourceColumn: CRA_Date
+
+	column CRA_Amount
+		dataType: double
+		lineageTag: af96072b-6b8d-5f29-a292-9c81c635dce4
+		summarizeBy: none
+		sourceColumn: CRA_Amount
+
+	column CRA_Notes
+		dataType: string
+		lineageTag: 0d2e1c7a-ea55-5b84-ac7c-c176ef56992e
+		summarizeBy: none
+		sourceColumn: CRA_Notes
+
+	column BA_Loan_Assr
+		dataType: string
+		lineageTag: 6335fc39-4235-580b-9d3d-9c277bb50ca7
+		summarizeBy: none
+		sourceColumn: BA_Loan_Assr
+
+	column BA_2nd_Reviewer
+		dataType: string
+		lineageTag: fe341e88-90c5-5188-8b2d-183356e20b66
+		summarizeBy: none
+		sourceColumn: BA_2nd_Reviewer
+
+	column BA_Loan_Care
+		dataType: string
+		lineageTag: 264a2720-3a72-5c34-a2b5-bcef57e095d5
+		summarizeBy: none
+		sourceColumn: BA_Loan_Care
+
+	column Commercial_Beacon
+		dataType: string
+		lineageTag: 6dc1a3cd-49d1-5a27-bf97-1c0b92b08c17
+		summarizeBy: none
+		sourceColumn: Commercial_Beacon
+
+	column FullName
+		dataType: string
+		lineageTag: e30563ea-a192-527e-aaee-636b29d5c704
+		summarizeBy: none
+		sourceColumn: FullName
+
+	partition Clients = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"Primary_ID" = Int64.Type, #"Date" = date, #"DateModified" = date, #"Salutation" = text, #"First" = text, #"Last" = text, #"Company" = text, #"Partner" = text, #"Principal_Language" = text, #"File_Location" = text, #"Client" = logical, #"Inactive_Record" = logical, #"Business_Closed" = logical, #"WESBCInitiated" = logical, #"Newsletter_Recipient" = logical, #"Address" = text, #"City" = text, #"Province" = text, #"Postal_Code" = text, #"Region" = text, #"Location" = text, #"Counsellor_Assigned" = text, #"Loan_Admin_Assigned" = text, #"Business_Phone" = text, #"Email" = text, #"AltEMail" = text, #"Website" = text, #"Source" = text, #"SourceID" = Int64.Type, #"Referral" = text, #"ReferralID" = Int64.Type, #"Aboriginal" = logical, #"Visible_Minority" = logical, #"Youth" = logical, #"Child_Senior" = logical, #"Disabled" = logical, #"EI_Recipient" = logical, #"Social_Assistance" = logical, #"Employed" = logical, #"Age" = Int64.Type, #"Programs" = text, #"Business_Status" = text, #"Years_in_Business" = Int64.Type, #"Business_Start_Date" = date, #"Number_ofEmployees" = Int64.Type, #"Jobs_Created" = number, #"Jobs_Maintained" = number, #"Business_Structure" = text, #"Business_Sector" = text, #"Business_Description" = text, #"Industry" = Int64.Type, #"Home_Based" = Int64.Type, #"Franchise" = logical, #"Import_Export" = logical, #"Distributor_Agent" = logical, #"Manufacturing" = logical, #"Retail" = logical, #"Service" = logical, #"Professional" = logical, #"Annual_Revenue" = Int64.Type, #"Date_of_Birth" = date, #"Marital_Status" = text, #"Dependants" = Int64.Type, #"SIN" = text, #"HAddress" = text, #"HCity" = text, #"HProv" = text, #"HPC" = text, #"Home_Phone" = text, #"Entrepreneurial_Experience" = logical, #"Related_Experience" = logical, #"Bankruptcy" = logical, #"Education" = text, #"Spouse_Name" = text, #"Contact_Date" = date, #"Notes" = text, #"Promo_Ack_Rel_Recd" = logical, #"Promo_Consent_Status" = text, #"Promo_Consent_Date" = date, #"Photo_Bio_Release" = logical, #"Testimonial_On_File" = logical, #"Storyteller" = logical, #"Francophone" = logical, #"LGBTQIA2S" = logical, #"Immigrant_NewCanadian_Refugee" = logical, #"Age_Under30" = logical, #"Age_30_39" = logical, #"Age_40_44" = logical, #"Age_45_54" = logical, #"Age_Over55" = logical, #"WEConnect" = logical, #"WEConnect_Cert_By" = text, #"Growth_Client" = logical, #"NDIT" = logical, #"NDIT_On_Date" = date, #"Status" = text, #"Via" = text, #"Updated" = date, #"Updated_By" = text, #"Referral_Recd" = logical, #"Loan_Recd" = logical, #"Pending_Recd" = logical, #"CFDC" = text, #"EMWE" = text, #"C3" = text, #"C3_Industry" = text, #"Tourism_Operator" = logical, #"Manufacturing_PPE" = logical, #"Commercial_Outlet" = logical, #"Send_Via" = text, #"Planner" = text, #"Bus_Analyst" = text, #"Referral_Name" = text, #"Business_Plan_Status" = text, #"Looking_For_Financing" = text, #"Financing_Amt" = number, #"Contact_Notes" = text, #"Business_Number" = text, #"Ownership_Details" = text, #"Social_Enterprise" = logical, #"Interested_In_Mentor" = logical, #"B2B" = logical, #"B2C" = logical, #"Jobs_Expanded" = number, #"Court_Status" = text, #"Court_Date" = date, #"Court_Notes" = text, #"CRA_Status" = text, #"CRA_Date" = date, #"CRA_Amount" = number, #"CRA_Notes" = text, #"BA_Loan_Assr" = text, #"BA_2nd_Reviewer" = text, #"BA_Loan_Care" = text, #"Commercial_Beacon" = text, #"FullName" = text],
+			        {
+			                    {101, #date(2023,1,1), #date(2023,1,1), "Ms", "Anna", "Iboard", "Iboard Design Co.", "Partner-1", "English", "File_Location-1", true, true, true, false, false, "Address-1", "Vancouver", "BC", "Postal_Code-1", "Region-1", "Location-1", "J. Olsen", "J. Olsen", "Business_Phone-1", "anna@iboard.example", "AltEMail-1", "Website-1", "Web", 1, "Bank/CU", 1, false, false, false, true, false, true, false, false, 28, "Programs-1", "Start-up", 1, #date(2023,1,1), 1, 0.0, 0.0, "Sole Proprietor", "Retail", "Business_Description-1", 1, 1, true, false, false, false, true, false, true, 45000, #date(2023,1,1), "Active", 1, "XXX-XXX-XXX", "HAddress-1", "Vancouver", "BC", "HPC-1", "Home_Phone-1", false, true, false, "Education-1", "Spouse_Name-1", #date(2023,1,1), "Sample note 1", true, "Consented", #date(2023,1,1), false, false, false, false, true, false, false, true, true, true, false, true, "J. Olsen", false, false, #date(2023,1,1), "Active", "Phone", #date(2023,1,1), "J. Olsen", false, true, true, "Y", "Y", "Y", "Food & Beverage", false, false, false, "J. Olsen", "J. Olsen", "J. Olsen", "Referral_Name-1", "Complete", "Yes", 1000.0, "Sample note 1", "Business_Number-1", "Ownership_Details-1", false, false, true, true, 1000.0, "Active", #date(2023,1,1), "Sample note 1", "Active", #date(2023,1,1), 1000.0, "Sample note 1", "BA_Loan_Assr-1", "BA_2nd_Reviewer-1", "BA_Loan_Care-1", "Commercial_Beacon-1", "Anna Iboard — Iboard Design Co."},
+			                    {102, #date(2024,2,2), #date(2024,2,2), "Ms", "Priya", "Sharma", "Spice Route Foods", "Partner-2", "French", "File_Location-2", true, false, false, true, true, "Address-2", "Kelowna", "BC", "Postal_Code-2", "Region-2", "Location-2", "M. Reyes", "M. Reyes", "Business_Phone-2", "priya@sharma.example", "AltEMail-2", "Website-2", "Referral", 2, "Chamber", 2, false, false, true, false, true, false, true, true, 32, "Programs-2", "Existing", 3, #date(2024,2,2), 3, 3.0, 2.0, "Incorporated", "Food & Beverage", "Business_Description-2", 3, 3, false, false, true, false, false, false, false, 76000, #date(2024,2,2), "Pending", 3, "XXX-XXX-XXX", "HAddress-2", "Kelowna", "BC", "HPC-2", "Home_Phone-2", true, false, false, "Education-2", "Spouse_Name-2", #date(2024,2,2), "Sample note 2", false, "Declined", #date(2024,2,2), true, false, true, true, false, true, true, false, false, false, false, false, "M. Reyes", false, false, #date(2024,2,2), "Pending", "Email", #date(2024,2,2), "M. Reyes", false, false, false, "N", "N", "N", "Professional Services", false, true, true, "M. Reyes", "M. Reyes", "M. Reyes", "Referral_Name-2", "In Progress", "No", 2234.0, "Sample note 2", "Business_Number-2", "Ownership_Details-2", true, true, false, false, 2234.0, "Pending", #date(2024,2,2), "Sample note 2", "Pending", #date(2024,2,2), 2234.0, "Sample note 2", "BA_Loan_Assr-2", "BA_2nd_Reviewer-2", "BA_Loan_Care-2", "Commercial_Beacon-2", "Priya Sharma — Spice Route Foods"},
+			                    {103, #date(2023,3,3), #date(2023,3,3), "Ms", "Maria", "Gomez", "Coastal Crafts Ltd.", "Partner-3", "English", "File_Location-3", true, false, false, false, false, "Address-3", "Victoria", "BC", "Postal_Code-3", "Region-3", "Location-3", "T. Bhatt", "T. Bhatt", "Business_Phone-3", "maria@gomez.example", "AltEMail-3", "Website-3", "Event", 3, "Advisor", 3, true, true, false, false, false, false, false, false, 36, "Programs-3", "Expanding", 5, #date(2023,3,3), 5, 6.0, 4.0, "Partnership", "Professional Services", "Business_Description-3", 5, 5, false, true, false, true, false, true, false, 107000, #date(2023,3,3), "Completed", 5, "XXX-XXX-XXX", "HAddress-3", "Victoria", "BC", "HPC-3", "Home_Phone-3", false, false, true, "Education-3", "Spouse_Name-3", #date(2023,3,3), "Sample note 3", false, "Pending", #date(2023,3,3), false, true, false, false, false, false, false, false, false, false, true, false, "T. Bhatt", true, true, #date(2023,3,3), "Completed", "In Person", #date(2023,3,3), "T. Bhatt", true, false, false, "R", "R", "R", "Technology", true, false, false, "T. Bhatt", "T. Bhatt", "T. Bhatt", "Referral_Name-3", "Not Started", "Maybe", 3468.0, "Sample note 3", "Business_Number-3", "Ownership_Details-3", false, false, false, false, 3468.0, "Completed", #date(2023,3,3), "Sample note 3", "Completed", #date(2023,3,3), 3468.0, "Sample note 3", "BA_Loan_Assr-3", "BA_2nd_Reviewer-3", "BA_Loan_Care-3", "Commercial_Beacon-3", "Maria Gomez — Coastal Crafts Ltd."},
+			                    {104, #date(2024,4,4), #date(2024,4,4), "Ms", "Linda", "Chen", "GreenLeaf Consulting", "Partner-4", "French", "File_Location-4", true, true, true, false, false, "Address-4", "Surrey", "BC", "Postal_Code-4", "Region-4", "Location-4", "K. Lund", "K. Lund", "Business_Phone-4", "linda@chen.example", "AltEMail-4", "Website-4", "Walk-in", 4, "Bank/CU", 1, false, false, false, true, false, true, false, false, 40, "Programs-4", "Start-up", 2, #date(2024,4,4), 7, 0.0, 0.0, "Sole Proprietor", "Technology", "Business_Description-4", 2, 2, true, false, false, false, true, false, true, 138000, #date(2024,4,4), "On Hold", 2, "XXX-XXX-XXX", "HAddress-4", "Surrey", "BC", "HPC-4", "Home_Phone-4", false, true, false, "Education-4", "Spouse_Name-4", #date(2024,4,4), "Sample note 4", true, "Consented", #date(2024,4,4), false, false, false, false, true, false, false, true, true, true, false, true, "K. Lund", false, false, #date(2024,4,4), "On Hold", "Web", #date(2024,4,4), "K. Lund", false, true, true, "Y", "Y", "Y", "Manufacturing", false, false, false, "K. Lund", "K. Lund", "K. Lund", "Referral_Name-4", "Complete", "Yes", 4702.0, "Sample note 4", "Business_Number-4", "Ownership_Details-4", false, false, true, true, 4702.0, "On Hold", #date(2024,4,4), "Sample note 4", "On Hold", #date(2024,4,4), 4702.0, "Sample note 4", "BA_Loan_Assr-4", "BA_2nd_Reviewer-4", "BA_Loan_Care-4", "Commercial_Beacon-4", "Linda Chen — GreenLeaf Consulting"},
+			                    {105, #date(2023,5,5), #date(2023,5,5), "Ms", "Sara", "Okafor", "Okafor Logistics", "Partner-5", "English", "File_Location-5", true, false, false, true, true, "Address-5", "Burnaby", "BC", "Postal_Code-5", "Region-5", "Location-5", "J. Olsen", "J. Olsen", "Business_Phone-5", "sara@okafor.example", "AltEMail-5", "Website-5", "Web", 1, "Chamber", 2, false, false, true, false, true, false, true, true, 44, "Programs-5", "Existing", 4, #date(2023,5,5), 9, 3.0, 2.0, "Incorporated", "Manufacturing", "Business_Description-5", 4, 4, false, false, true, false, false, false, false, 169000, #date(2023,5,5), "Active", 4, "XXX-XXX-XXX", "HAddress-5", "Burnaby", "BC", "HPC-5", "Home_Phone-5", true, false, false, "Education-5", "Spouse_Name-5", #date(2023,5,5), "Sample note 5", false, "Declined", #date(2023,5,5), true, false, true, true, false, true, true, false, false, false, false, false, "J. Olsen", false, false, #date(2023,5,5), "Active", "Phone", #date(2023,5,5), "J. Olsen", false, false, false, "N", "N", "N", "Wellness", false, true, true, "J. Olsen", "J. Olsen", "J. Olsen", "Referral_Name-5", "In Progress", "No", 5936.0, "Sample note 5", "Business_Number-5", "Ownership_Details-5", true, true, false, false, 5936.0, "Active", #date(2023,5,5), "Sample note 5", "Active", #date(2023,5,5), 5936.0, "Sample note 5", "BA_Loan_Assr-5", "BA_2nd_Reviewer-5", "BA_Loan_Care-5", "Commercial_Beacon-5", "Sara Okafor — Okafor Logistics"},
+			                    {106, #date(2024,6,6), #date(2024,6,6), "Ms", "Emily", "Tremblay", "Aurora Wellness", "Partner-6", "French", "File_Location-6", true, false, false, false, false, "Address-6", "Vancouver", "BC", "Postal_Code-6", "Region-6", "Location-6", "M. Reyes", "M. Reyes", "Business_Phone-6", "emily@tremblay.example", "AltEMail-6", "Website-6", "Referral", 2, "Advisor", 3, true, true, false, false, false, false, false, false, 48, "Programs-6", "Expanding", 1, #date(2024,6,6), 11, 6.0, 4.0, "Partnership", "Wellness", "Business_Description-6", 1, 1, false, true, false, true, false, true, false, 200000, #date(2024,6,6), "Pending", 1, "XXX-XXX-XXX", "HAddress-6", "Vancouver", "BC", "HPC-6", "Home_Phone-6", false, false, true, "Education-6", "Spouse_Name-6", #date(2024,6,6), "Sample note 6", false, "Pending", #date(2024,6,6), false, true, false, false, false, false, false, false, false, false, true, false, "M. Reyes", true, true, #date(2024,6,6), "Pending", "Email", #date(2024,6,6), "M. Reyes", true, false, false, "R", "R", "R", "Logistics", true, false, false, "M. Reyes", "M. Reyes", "M. Reyes", "Referral_Name-6", "Not Started", "Maybe", 7170.0, "Sample note 6", "Business_Number-6", "Ownership_Details-6", false, false, false, false, 7170.0, "Pending", #date(2024,6,6), "Sample note 6", "Pending", #date(2024,6,6), 7170.0, "Sample note 6", "BA_Loan_Assr-6", "BA_2nd_Reviewer-6", "BA_Loan_Care-6", "Commercial_Beacon-6", "Emily Tremblay — Aurora Wellness"},
+			                    {107, #date(2023,7,7), #date(2023,7,7), "Ms", "Nadia", "Hassan", "Hassan Tech Labs", "Partner-7", "English", "File_Location-7", true, true, true, false, false, "Address-7", "Kelowna", "BC", "Postal_Code-7", "Region-7", "Location-7", "T. Bhatt", "T. Bhatt", "Business_Phone-7", "nadia@hassan.example", "AltEMail-7", "Website-7", "Event", 3, "Bank/CU", 1, false, false, false, true, false, true, false, false, 52, "Programs-7", "Start-up", 3, #date(2023,7,7), 1, 0.0, 0.0, "Sole Proprietor", "Logistics", "Business_Description-7", 3, 3, true, false, false, false, true, false, true, 231000, #date(2023,7,7), "Completed", 3, "XXX-XXX-XXX", "HAddress-7", "Kelowna", "BC", "HPC-7", "Home_Phone-7", false, true, false, "Education-7", "Spouse_Name-7", #date(2023,7,7), "Sample note 7", true, "Consented", #date(2023,7,7), false, false, false, false, true, false, false, true, true, true, false, true, "T. Bhatt", false, false, #date(2023,7,7), "Completed", "In Person", #date(2023,7,7), "T. Bhatt", false, true, true, "Y", "Y", "Y", "Creative", false, false, false, "T. Bhatt", "T. Bhatt", "T. Bhatt", "Referral_Name-7", "Complete", "Yes", 8404.0, "Sample note 7", "Business_Number-7", "Ownership_Details-7", false, false, true, true, 8404.0, "Completed", #date(2023,7,7), "Sample note 7", "Completed", #date(2023,7,7), 8404.0, "Sample note 7", "BA_Loan_Assr-7", "BA_2nd_Reviewer-7", "BA_Loan_Care-7", "Commercial_Beacon-7", "Nadia Hassan — Hassan Tech Labs"},
+			                    {108, #date(2024,8,8), #date(2024,8,8), "Ms", "Grace", "Williams", "Williams Bakery", "Partner-8", "French", "File_Location-8", true, false, false, true, true, "Address-8", "Victoria", "BC", "Postal_Code-8", "Region-8", "Location-8", "K. Lund", "K. Lund", "Business_Phone-8", "grace@williams.example", "AltEMail-8", "Website-8", "Walk-in", 4, "Chamber", 2, false, false, true, false, true, false, true, true, 56, "Programs-8", "Existing", 5, #date(2024,8,8), 3, 3.0, 2.0, "Incorporated", "Creative", "Business_Description-8", 5, 5, false, false, true, false, false, false, false, 262000, #date(2024,8,8), "On Hold", 5, "XXX-XXX-XXX", "HAddress-8", "Victoria", "BC", "HPC-8", "Home_Phone-8", true, false, false, "Education-8", "Spouse_Name-8", #date(2024,8,8), "Sample note 8", false, "Declined", #date(2024,8,8), true, false, true, true, false, true, true, false, false, false, false, false, "K. Lund", false, false, #date(2024,8,8), "On Hold", "Web", #date(2024,8,8), "K. Lund", false, false, false, "N", "N", "N", "Retail", false, true, true, "K. Lund", "K. Lund", "K. Lund", "Referral_Name-8", "In Progress", "No", 9638.0, "Sample note 8", "Business_Number-8", "Ownership_Details-8", true, true, false, false, 9638.0, "On Hold", #date(2024,8,8), "Sample note 8", "On Hold", #date(2024,8,8), 9638.0, "Sample note 8", "BA_Loan_Assr-8", "BA_2nd_Reviewer-8", "BA_Loan_Care-8", "Commercial_Beacon-8", "Grace Williams — Williams Bakery"}
+			        }
+			    )
+			in
+			    Source
+

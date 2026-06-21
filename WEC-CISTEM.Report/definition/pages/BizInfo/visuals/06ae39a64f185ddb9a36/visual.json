@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "06ae39a64f185ddb9a36",
+  "position": {
+    "x": 432,
+    "y": 892,
+    "z": 19,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 19
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Bus_Analyst"
+                }
+              },
+              "queryRef": "Clients.Bus_Analyst",
+              "nativeQueryRef": "Bus_Analyst"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "BA_Loan_Assr"
+                }
+              },
+              "queryRef": "Clients.BA_Loan_Assr",
+              "nativeQueryRef": "BA_Loan_Assr"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "BA_2nd_Reviewer"
+                }
+              },
+              "queryRef": "Clients.BA_2nd_Reviewer",
+              "nativeQueryRef": "BA_2nd_Reviewer"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'WEC Care By'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

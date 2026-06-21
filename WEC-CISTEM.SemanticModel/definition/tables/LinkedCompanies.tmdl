@@ -1,0 +1,43 @@
+table LinkedCompanies
+	lineageTag: baa99231-e154-517a-9b7f-cd4e75434cbf
+
+	column LinkID
+		dataType: int64
+		isHidden
+		lineageTag: 24d30452-fa6c-53d1-a3cc-a1b6803ceb1a
+		summarizeBy: none
+		sourceColumn: LinkID
+
+	column ClientID
+		dataType: int64
+		isHidden
+		lineageTag: be691438-8591-511a-8ee4-48c655f1a8d1
+		summarizeBy: none
+		sourceColumn: ClientID
+
+	column Description
+		dataType: string
+		lineageTag: 6a16c3d4-7bb5-5006-b79a-d5371f9a6128
+		summarizeBy: none
+		sourceColumn: Description
+
+	partition LinkedCompanies = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"LinkID" = Int64.Type, #"ClientID" = Int64.Type, #"Description" = text],
+			        {
+			                    {1, 101, "Description 1"},
+			                    {2, 102, "Description 2"},
+			                    {3, 103, "Description 3"},
+			                    {4, 104, "Description 4"},
+			                    {5, 105, "Description 5"},
+			                    {6, 106, "Description 6"},
+			                    {7, 107, "Description 7"},
+			                    {8, 108, "Description 8"}
+			        }
+			    )
+			in
+			    Source
+

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "7143c993555a5627b340",
+  "position": {
+    "x": 8,
+    "y": 490,
+    "z": 9,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 9
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "LoanTerm"
+                }
+              },
+              "queryRef": "Loans.LoanTerm",
+              "nativeQueryRef": "LoanTerm"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "PrimeRate"
+                }
+              },
+              "queryRef": "Loans.PrimeRate",
+              "nativeQueryRef": "PrimeRate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "PrimeRatePlus"
+                }
+              },
+              "queryRef": "Loans.PrimeRatePlus",
+              "nativeQueryRef": "PrimeRatePlus"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Terms'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

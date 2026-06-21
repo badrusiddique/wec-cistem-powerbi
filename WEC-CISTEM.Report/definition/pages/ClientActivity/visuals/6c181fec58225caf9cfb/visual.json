@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "6c181fec58225caf9cfb",
+  "position": {
+    "x": 857,
+    "y": 262,
+    "z": 8,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "RegDate"
+                }
+              },
+              "queryRef": "TrainingReg.RegDate",
+              "nativeQueryRef": "RegDate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "Attended"
+                }
+              },
+              "queryRef": "TrainingReg.Attended",
+              "nativeQueryRef": "Attended"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "TrainingReg"
+                    }
+                  },
+                  "Property": "RequiredForLoan"
+                }
+              },
+              "queryRef": "TrainingReg.RequiredForLoan",
+              "nativeQueryRef": "RequiredForLoan"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Training Summary'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

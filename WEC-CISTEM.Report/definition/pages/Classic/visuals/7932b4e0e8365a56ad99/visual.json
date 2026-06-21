@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "7932b4e0e8365a56ad99",
+  "position": {
+    "x": 8,
+    "y": 802,
+    "z": 16,
+    "width": 1264,
+    "height": 30,
+    "tabOrder": 16
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "# Clients"
+                }
+              },
+              "queryRef": "_Measures.# Clients",
+              "nativeQueryRef": "# Clients"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Location & Business'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

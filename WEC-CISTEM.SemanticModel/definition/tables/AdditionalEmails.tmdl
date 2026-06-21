@@ -1,0 +1,61 @@
+table AdditionalEmails
+	lineageTag: 7cb5b2e4-00b3-59fc-9239-abd9332d3be9
+
+	column AEmailID
+		dataType: int64
+		isHidden
+		lineageTag: 7a07a99e-a852-540e-aef5-ae7de6c1dfe5
+		summarizeBy: none
+		sourceColumn: AEmailID
+
+	column ClientID
+		dataType: int64
+		isHidden
+		lineageTag: 0e70db48-fc97-5360-bd09-ff8e1f5aa14f
+		summarizeBy: none
+		sourceColumn: ClientID
+
+	column Name
+		dataType: string
+		lineageTag: 3e32145e-42c5-5232-b744-5e0143818f8d
+		summarizeBy: none
+		sourceColumn: Name
+
+	column Role
+		dataType: string
+		lineageTag: f6a99b65-80b5-5043-a67e-481f71f90130
+		summarizeBy: none
+		sourceColumn: Role
+
+	column EMail
+		dataType: string
+		lineageTag: a6778c6b-db9c-5293-bd34-63c8ae61bbd0
+		summarizeBy: none
+		sourceColumn: EMail
+
+	column Notes
+		dataType: string
+		lineageTag: f85abe59-6b7b-5a6a-b626-17315c2704ef
+		summarizeBy: none
+		sourceColumn: Notes
+
+	partition AdditionalEmails = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"AEmailID" = Int64.Type, #"ClientID" = Int64.Type, #"Name" = text, #"Role" = text, #"EMail" = text, #"Notes" = text],
+			        {
+			                    {1, 101, "Name-1", "Role-1", "EMail-1", "Sample note 1"},
+			                    {2, 102, "Name-2", "Role-2", "EMail-2", "Sample note 2"},
+			                    {3, 103, "Name-3", "Role-3", "EMail-3", "Sample note 3"},
+			                    {4, 104, "Name-4", "Role-4", "EMail-4", "Sample note 4"},
+			                    {5, 105, "Name-5", "Role-5", "EMail-5", "Sample note 5"},
+			                    {6, 106, "Name-6", "Role-6", "EMail-6", "Sample note 6"},
+			                    {7, 107, "Name-7", "Role-7", "EMail-7", "Sample note 7"},
+			                    {8, 108, "Name-8", "Role-8", "EMail-8", "Sample note 8"}
+			        }
+			    )
+			in
+			    Source
+

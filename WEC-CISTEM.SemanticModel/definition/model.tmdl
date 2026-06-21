@@ -1,0 +1,27 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+
+ref table Clients
+ref table ClientPhones
+ref table AdditionalEmails
+ref table BLIS
+ref table LinkedCompanies
+ref table Locations
+ref table ClientServices
+ref table ContactTracking
+ref table Loans
+ref table SARI_Assessment
+ref table SARI_Financials
+ref table FSReceived
+ref table PersonalProfiles
+ref table Shareholders
+ref table Impact
+ref table MentorMatches
+ref table MenteeMatches
+ref table TrainingReg
+ref table Training
+ref table Source
+ref table Referral
+ref table _Measures
+

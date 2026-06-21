@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f54358d08a5651fc885b",
+  "position": {
+    "x": 432,
+    "y": 368,
+    "z": 10,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Entrepreneurial_Experience"
+                }
+              },
+              "queryRef": "Clients.Entrepreneurial_Experience",
+              "nativeQueryRef": "Entrepreneurial_Experience"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Related_Experience"
+                }
+              },
+              "queryRef": "Clients.Related_Experience",
+              "nativeQueryRef": "Related_Experience"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Bankruptcy"
+                }
+              },
+              "queryRef": "Clients.Bankruptcy",
+              "nativeQueryRef": "Bankruptcy"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Background'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

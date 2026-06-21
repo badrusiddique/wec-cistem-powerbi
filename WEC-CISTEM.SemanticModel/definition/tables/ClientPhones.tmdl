@@ -1,0 +1,75 @@
+table ClientPhones
+	lineageTag: 88f2964f-db0e-5fe8-a960-b123c5f44b23
+
+	column PhoneID
+		dataType: int64
+		isHidden
+		lineageTag: c0bbb887-e124-5a8f-9b40-f6cc86e90c8a
+		summarizeBy: none
+		sourceColumn: PhoneID
+
+	column ClientID
+		dataType: int64
+		isHidden
+		lineageTag: e748f3d0-48f1-5724-84f1-53193faf84a2
+		summarizeBy: none
+		sourceColumn: ClientID
+
+	column PhoneNum
+		dataType: string
+		lineageTag: a489a579-6e48-5606-b802-3828ecf6caa0
+		summarizeBy: none
+		sourceColumn: PhoneNum
+
+	column PhoneDesc
+		dataType: string
+		lineageTag: c0f79ecd-9022-50ab-bf39-c2ff320b7819
+		summarizeBy: none
+		sourceColumn: PhoneDesc
+
+	column PhoneNotes
+		dataType: string
+		lineageTag: 6a8fe800-d5bf-5b3f-8e48-100693aff652
+		summarizeBy: none
+		sourceColumn: PhoneNotes
+
+	column Primary
+		dataType: boolean
+		lineageTag: 48518583-0458-50b7-adec-bbeec6b92240
+		summarizeBy: none
+		sourceColumn: Primary
+
+	column LocID
+		dataType: int64
+		lineageTag: 1cfcf875-99ef-5ba8-81f1-5d717da79c79
+		summarizeBy: none
+		sourceColumn: LocID
+
+	partition ClientPhones = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"PhoneID" = Int64.Type, #"ClientID" = Int64.Type, #"PhoneNum" = text, #"PhoneDesc" = text, #"PhoneNotes" = text, #"Primary" = logical, #"LocID" = Int64.Type],
+			        {
+			                    {1, 101, "PhoneNum-1", "PhoneDesc-1", "Sample note 1", false, 1},
+			                    {2, 101, "PhoneNum-2", "PhoneDesc-2", "Sample note 2", false, 2},
+			                    {3, 102, "PhoneNum-2", "PhoneDesc-2", "Sample note 2", false, 2},
+			                    {4, 102, "PhoneNum-3", "PhoneDesc-3", "Sample note 3", true, 3},
+			                    {5, 103, "PhoneNum-3", "PhoneDesc-3", "Sample note 3", true, 3},
+			                    {6, 103, "PhoneNum-4", "PhoneDesc-4", "Sample note 4", false, 4},
+			                    {7, 104, "PhoneNum-4", "PhoneDesc-4", "Sample note 4", false, 4},
+			                    {8, 104, "PhoneNum-5", "PhoneDesc-5", "Sample note 5", false, 5},
+			                    {9, 105, "PhoneNum-5", "PhoneDesc-5", "Sample note 5", false, 5},
+			                    {10, 105, "PhoneNum-6", "PhoneDesc-6", "Sample note 6", true, 6},
+			                    {11, 106, "PhoneNum-6", "PhoneDesc-6", "Sample note 6", true, 6},
+			                    {12, 106, "PhoneNum-7", "PhoneDesc-7", "Sample note 7", false, 7},
+			                    {13, 107, "PhoneNum-7", "PhoneDesc-7", "Sample note 7", false, 7},
+			                    {14, 107, "PhoneNum-8", "PhoneDesc-8", "Sample note 8", false, 8},
+			                    {15, 108, "PhoneNum-8", "PhoneDesc-8", "Sample note 8", false, 8},
+			                    {16, 108, "PhoneNum-9", "PhoneDesc-9", "Sample note 9", true, 9}
+			        }
+			    )
+			in
+			    Source
+

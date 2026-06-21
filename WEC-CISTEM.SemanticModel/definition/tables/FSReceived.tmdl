@@ -1,0 +1,91 @@
+table FSReceived
+	lineageTag: f43a1958-cfea-5c7b-b77b-683cbc530ad3
+
+	column FSRecID
+		dataType: int64
+		isHidden
+		lineageTag: e63ec6e1-df6f-52fb-8e1a-8bd33aa1e57d
+		summarizeBy: none
+		sourceColumn: FSRecID
+
+	column LPrimaryID
+		dataType: int64
+		isHidden
+		lineageTag: d68ccd18-8eef-51f8-8faa-f4cdb73b18c1
+		summarizeBy: none
+		sourceColumn: LPrimaryID
+
+	column IncStmt
+		dataType: boolean
+		lineageTag: 4e913594-676d-5b85-ae81-67ef2bdf52d6
+		summarizeBy: none
+		sourceColumn: IncStmt
+
+	column BalSht
+		dataType: boolean
+		lineageTag: eca002e6-c604-5a36-9923-ad4b6baf5d92
+		summarizeBy: none
+		sourceColumn: BalSht
+
+	column CashFlow
+		dataType: boolean
+		lineageTag: 826a8e0d-da50-5c92-beb5-ad05e0f68b85
+		summarizeBy: none
+		sourceColumn: CashFlow
+
+	column YrEnd
+		dataType: boolean
+		lineageTag: 6fcbc9a0-655e-57cf-83e5-8a9245bdd35f
+		summarizeBy: none
+		sourceColumn: YrEnd
+
+	column ForPeriodOf
+		dataType: dateTime
+		lineageTag: ca70ad0d-d5da-504e-aa15-fd976a5e38fd
+		summarizeBy: none
+		sourceColumn: ForPeriodOf
+
+	column DateReceived
+		dataType: dateTime
+		lineageTag: 87397082-178b-5fe1-818e-3a4f25756acf
+		summarizeBy: none
+		sourceColumn: DateReceived
+
+	column DateToAnalyst
+		dataType: dateTime
+		lineageTag: d4027c09-3f35-58c7-905c-d53557b337ce
+		summarizeBy: none
+		sourceColumn: DateToAnalyst
+
+	column DateReviewed
+		dataType: dateTime
+		lineageTag: e9bf9123-473d-5105-b9c4-a817cafd03cb
+		summarizeBy: none
+		sourceColumn: DateReviewed
+
+	column Notes
+		dataType: string
+		lineageTag: 4e6ee5a2-16a2-5682-9568-3216faa57a30
+		summarizeBy: none
+		sourceColumn: Notes
+
+	partition FSReceived = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"FSRecID" = Int64.Type, #"LPrimaryID" = Int64.Type, #"IncStmt" = logical, #"BalSht" = logical, #"CashFlow" = logical, #"YrEnd" = logical, #"ForPeriodOf" = date, #"DateReceived" = date, #"DateToAnalyst" = date, #"DateReviewed" = date, #"Notes" = text],
+			        {
+			                    {1, 101, false, true, false, false, #date(2023,1,1), #date(2023,1,1), #date(2023,1,1), #date(2023,1,1), "Sample note 1"},
+			                    {2, 102, false, false, true, true, #date(2024,2,2), #date(2024,2,2), #date(2024,2,2), #date(2024,2,2), "Sample note 2"},
+			                    {3, 103, true, false, false, false, #date(2023,3,3), #date(2023,3,3), #date(2023,3,3), #date(2023,3,3), "Sample note 3"},
+			                    {4, 104, false, true, false, false, #date(2024,4,4), #date(2024,4,4), #date(2024,4,4), #date(2024,4,4), "Sample note 4"},
+			                    {5, 105, false, false, true, true, #date(2023,5,5), #date(2023,5,5), #date(2023,5,5), #date(2023,5,5), "Sample note 5"},
+			                    {6, 106, true, false, false, false, #date(2024,6,6), #date(2024,6,6), #date(2024,6,6), #date(2024,6,6), "Sample note 6"},
+			                    {7, 107, false, true, false, false, #date(2023,7,7), #date(2023,7,7), #date(2023,7,7), #date(2023,7,7), "Sample note 7"},
+			                    {8, 108, false, false, true, true, #date(2024,8,8), #date(2024,8,8), #date(2024,8,8), #date(2024,8,8), "Sample note 8"}
+			        }
+			    )
+			in
+			    Source
+

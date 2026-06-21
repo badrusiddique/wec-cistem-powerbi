@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "152e00b4bf58571f9e33",
+  "position": {
+    "x": 8,
+    "y": 262,
+    "z": 6,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ContactTracking"
+                    }
+                  },
+                  "Property": "Date_In"
+                }
+              },
+              "queryRef": "ContactTracking.Date_In",
+              "nativeQueryRef": "Date_In"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ContactTracking"
+                    }
+                  },
+                  "Property": "Contact_Type"
+                }
+              },
+              "queryRef": "ContactTracking.Contact_Type",
+              "nativeQueryRef": "Contact_Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ContactTracking"
+                    }
+                  },
+                  "Property": "Report_Type"
+                }
+              },
+              "queryRef": "ContactTracking.Report_Type",
+              "nativeQueryRef": "Report_Type"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Contacts'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

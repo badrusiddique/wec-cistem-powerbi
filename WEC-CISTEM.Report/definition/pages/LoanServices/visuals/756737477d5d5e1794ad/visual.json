@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "756737477d5d5e1794ad",
+  "position": {
+    "x": 432,
+    "y": 668,
+    "z": 13,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 13
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "DisbursalFirstAmount"
+                }
+              },
+              "queryRef": "Loans.DisbursalFirstAmount",
+              "nativeQueryRef": "DisbursalFirstAmount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "DisbursalSecondAmount"
+                }
+              },
+              "queryRef": "Loans.DisbursalSecondAmount",
+              "nativeQueryRef": "DisbursalSecondAmount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loans"
+                    }
+                  },
+                  "Property": "DisbursalThirdAmount"
+                }
+              },
+              "queryRef": "Loans.DisbursalThirdAmount",
+              "nativeQueryRef": "DisbursalThirdAmount"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Disbursals'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "afb001c37aa15409aada",
+  "position": {
+    "x": 645,
+    "y": 262,
+    "z": 7,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MentorMatches"
+                    }
+                  },
+                  "Property": "OneToOneRank"
+                }
+              },
+              "queryRef": "MentorMatches.OneToOneRank",
+              "nativeQueryRef": "OneToOneRank"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MentorMatches"
+                    }
+                  },
+                  "Property": "PeerRank"
+                }
+              },
+              "queryRef": "MentorMatches.PeerRank",
+              "nativeQueryRef": "PeerRank"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MentorMatches"
+                    }
+                  },
+                  "Property": "ForumRank"
+                }
+              },
+              "queryRef": "MentorMatches.ForumRank",
+              "nativeQueryRef": "ForumRank"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Mentor Ranks'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

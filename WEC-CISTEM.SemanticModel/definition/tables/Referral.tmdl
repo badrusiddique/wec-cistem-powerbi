@@ -1,0 +1,43 @@
+table Referral
+	lineageTag: b3e6c24f-a703-50f1-9982-68705c4bf2ea
+
+	column ID
+		dataType: int64
+		isHidden
+		lineageTag: 463cf1ca-7e52-5d3e-91f0-09a118d754e4
+		summarizeBy: none
+		sourceColumn: ID
+
+	column SID
+		dataType: int64
+		lineageTag: 6acf9618-f433-5b0d-9071-25cdec006afa
+		summarizeBy: none
+		sourceColumn: SID
+
+	column Referral
+		dataType: string
+		lineageTag: 471e695d-e386-57cc-a36a-5c5dc8951da0
+		summarizeBy: none
+		sourceColumn: Referral
+
+	column Description
+		dataType: string
+		lineageTag: fee00fe2-fc67-5dc6-9c5b-9c39ea7d7712
+		summarizeBy: none
+		sourceColumn: Description
+
+	partition Referral = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"ID" = Int64.Type, #"SID" = Int64.Type, #"Referral" = text, #"Description" = text],
+			        {
+			                    {1, 1, "Bank/CU", "Bank/CU referral"},
+			                    {2, 2, "Chamber", "Chamber referral"},
+			                    {3, 3, "Advisor", "Advisor referral"}
+			        }
+			    )
+			in
+			    Source
+

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "d06ce509403f5841924c",
+  "position": {
+    "x": 967,
+    "y": 56,
+    "z": 4,
+    "width": 304,
+    "height": 96,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Disabled"
+                }
+              },
+              "queryRef": "Clients.Disabled",
+              "nativeQueryRef": "Disabled"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Visible_Minority"
+                }
+              },
+              "queryRef": "Clients.Visible_Minority",
+              "nativeQueryRef": "Visible_Minority"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Aboriginal"
+                }
+              },
+              "queryRef": "Clients.Aboriginal",
+              "nativeQueryRef": "Aboriginal"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Growth_Client"
+                }
+              },
+              "queryRef": "Clients.Growth_Client",
+              "nativeQueryRef": "Growth_Client"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Snapshot'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

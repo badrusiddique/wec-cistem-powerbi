@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "6454a4d99b5a5373a362",
+  "position": {
+    "x": 8,
+    "y": 474,
+    "z": 10,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Commercial_Outlet"
+                }
+              },
+              "queryRef": "Clients.Commercial_Outlet",
+              "nativeQueryRef": "Commercial_Outlet"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "B2B"
+                }
+              },
+              "queryRef": "Clients.B2B",
+              "nativeQueryRef": "B2B"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "B2C"
+                }
+              },
+              "queryRef": "Clients.B2C",
+              "nativeQueryRef": "B2C"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Tourism_Operator"
+                }
+              },
+              "queryRef": "Clients.Tourism_Operator",
+              "nativeQueryRef": "Tourism_Operator"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Manufacturing_PPE"
+                }
+              },
+              "queryRef": "Clients.Manufacturing_PPE",
+              "nativeQueryRef": "Manufacturing_PPE"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Business Type \u2013 cont.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

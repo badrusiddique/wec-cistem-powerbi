@@ -1,0 +1,2 @@
+szRelationship,grbit,ccolumn,icolumn,szObject,szColumn,szReferencedObject,szReferencedColumn
+"Reference",2,1,0,"dbo_ClientPhones","LocationID","dbo_tbl_Locations","LocationID"

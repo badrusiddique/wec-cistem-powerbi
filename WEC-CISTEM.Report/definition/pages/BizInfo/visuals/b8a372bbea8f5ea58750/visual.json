@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "b8a372bbea8f5ea58750",
+  "position": {
+    "x": 432,
+    "y": 998,
+    "z": 22,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 22
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "CRA_Status"
+                }
+              },
+              "queryRef": "Clients.CRA_Status",
+              "nativeQueryRef": "CRA_Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "CRA_Date"
+                }
+              },
+              "queryRef": "Clients.CRA_Date",
+              "nativeQueryRef": "CRA_Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "CRA_Amount"
+                }
+              },
+              "queryRef": "Clients.CRA_Amount",
+              "nativeQueryRef": "CRA_Amount"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'CRA'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

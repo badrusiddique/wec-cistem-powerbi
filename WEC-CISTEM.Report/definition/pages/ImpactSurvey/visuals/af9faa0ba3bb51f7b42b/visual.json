@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "af9faa0ba3bb51f7b42b",
+  "position": {
+    "x": 857,
+    "y": 490,
+    "z": 11,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 11
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "TrainingSatisfaction"
+                }
+              },
+              "queryRef": "Impact.TrainingSatisfaction",
+              "nativeQueryRef": "TrainingSatisfaction"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "CustService"
+                }
+              },
+              "queryRef": "Impact.CustService",
+              "nativeQueryRef": "CustService"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "QualityServices"
+                }
+              },
+              "queryRef": "Impact.QualityServices",
+              "nativeQueryRef": "QualityServices"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Satisfaction'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

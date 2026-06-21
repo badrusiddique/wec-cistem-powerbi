@@ -1,0 +1,85 @@
+table MentorMatches
+	lineageTag: 3bc7d683-f6ae-5fe8-9235-25fce460d377
+
+	column MentorRowID
+		dataType: int64
+		isHidden
+		lineageTag: 2cde3cd3-38a3-5b2c-b68f-0392b4f15582
+		summarizeBy: none
+		sourceColumn: MentorRowID
+
+	column ClientID
+		dataType: int64
+		isHidden
+		lineageTag: f66f5703-c3e6-50b9-8b14-12d82bce2a2f
+		summarizeBy: none
+		sourceColumn: ClientID
+
+	column ActiveMentxx
+		dataType: boolean
+		lineageTag: 9ab9e424-5e95-5638-89f9-3a92419ff505
+		summarizeBy: none
+		sourceColumn: ActiveMentxx
+
+	column skillset
+		dataType: string
+		lineageTag: 6160f68e-26a8-5a1b-9473-d7170d3bb476
+		summarizeBy: none
+		sourceColumn: skillset
+
+	column skill1
+		dataType: string
+		lineageTag: a4ccbaa7-0619-5561-a235-41150a08b7be
+		summarizeBy: none
+		sourceColumn: skill1
+
+	column skill2
+		dataType: string
+		lineageTag: 318815a4-ab7f-54c6-a410-d53940c84ef4
+		summarizeBy: none
+		sourceColumn: skill2
+
+	column skill3
+		dataType: string
+		lineageTag: bf2824ac-6653-59e2-8ea4-881962ccdc95
+		summarizeBy: none
+		sourceColumn: skill3
+
+	column OneToOneRank
+		dataType: int64
+		lineageTag: ae4593be-7084-5514-9136-d24277cbf5c6
+		summarizeBy: none
+		sourceColumn: OneToOneRank
+
+	column PeerRank
+		dataType: int64
+		lineageTag: eceb2e5f-c5c6-5feb-b2b5-a18c98d2ae80
+		summarizeBy: none
+		sourceColumn: PeerRank
+
+	column ForumRank
+		dataType: int64
+		lineageTag: 7a684bd4-239a-5c07-bb96-57d31e8e58ca
+		summarizeBy: none
+		sourceColumn: ForumRank
+
+	partition MentorMatches = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"MentorRowID" = Int64.Type, #"ClientID" = Int64.Type, #"ActiveMentxx" = logical, #"skillset" = text, #"skill1" = text, #"skill2" = text, #"skill3" = text, #"OneToOneRank" = Int64.Type, #"PeerRank" = Int64.Type, #"ForumRank" = Int64.Type],
+			        {
+			                    {1, 101, true, "skillset-1", "skill1-1", "skill2-1", "skill3-1", 1, 1, 1},
+			                    {2, 102, false, "skillset-2", "skill1-2", "skill2-2", "skill3-2", 3, 3, 3},
+			                    {3, 103, false, "skillset-3", "skill1-3", "skill2-3", "skill3-3", 5, 5, 5},
+			                    {4, 104, true, "skillset-4", "skill1-4", "skill2-4", "skill3-4", 2, 2, 2},
+			                    {5, 105, false, "skillset-5", "skill1-5", "skill2-5", "skill3-5", 4, 4, 4},
+			                    {6, 106, false, "skillset-6", "skill1-6", "skill2-6", "skill3-6", 1, 1, 1},
+			                    {7, 107, true, "skillset-7", "skill1-7", "skill2-7", "skill3-7", 3, 3, 3},
+			                    {8, 108, false, "skillset-8", "skill1-8", "skill2-8", "skill3-8", 5, 5, 5}
+			        }
+			    )
+			in
+			    Source
+

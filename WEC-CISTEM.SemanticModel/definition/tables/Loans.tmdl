@@ -1,0 +1,211 @@
+table Loans
+	lineageTag: 8717c220-880f-5bf3-8391-b49b55a8ed2c
+
+	column Loan_ID
+		dataType: int64
+		isHidden
+		lineageTag: b2a5e9a7-a3a3-56a6-908b-193aba2b6392
+		summarizeBy: none
+		sourceColumn: Loan_ID
+
+	column LPrimary_ID
+		dataType: int64
+		isHidden
+		lineageTag: 8e3e09ae-44ac-5284-8b73-f15acbb6e436
+		summarizeBy: none
+		sourceColumn: LPrimary_ID
+
+	column Loan_Number
+		dataType: string
+		lineageTag: af69ffba-8857-5c8e-8aa9-adc244d303ef
+		summarizeBy: none
+		sourceColumn: Loan_Number
+
+	column Input_Date
+		dataType: dateTime
+		lineageTag: 475dafb9-53e4-59c6-8b43-38209af4f7f6
+		summarizeBy: none
+		sourceColumn: Input_Date
+
+	column Fund_Usage
+		dataType: string
+		lineageTag: d2b6ec78-5dd9-5a2e-bd40-d11c9af80c1a
+		summarizeBy: none
+		sourceColumn: Fund_Usage
+
+	column Purpose_of_Loan
+		dataType: string
+		lineageTag: 04f31759-0fc7-5160-88a8-1379d2099167
+		summarizeBy: none
+		sourceColumn: Purpose_of_Loan
+
+	column Loan_Amount_Approved
+		dataType: double
+		lineageTag: 1c389aed-ee44-528b-90f2-39389cf804ab
+		summarizeBy: none
+		sourceColumn: Loan_Amount_Approved
+
+	column LP_WorkingCapital
+		dataType: boolean
+		lineageTag: e248eb42-0be8-5faf-a58c-a7462797774e
+		summarizeBy: none
+		sourceColumn: LP_WorkingCapital
+
+	column LP_WorkingCapital_Amnt
+		dataType: double
+		lineageTag: cb87e90c-bd5e-535e-9643-d79147132774
+		summarizeBy: none
+		sourceColumn: LP_WorkingCapital_Amnt
+
+	column LP_Equipment
+		dataType: boolean
+		lineageTag: 2a4e1acd-4834-55fe-b442-b8a82bff9fd5
+		summarizeBy: none
+		sourceColumn: LP_Equipment
+
+	column LP_Equipment_Amnt
+		dataType: double
+		lineageTag: b25d1497-2578-5d1e-add0-1f92cf11388b
+		summarizeBy: none
+		sourceColumn: LP_Equipment_Amnt
+
+	column LP_Leaseholds
+		dataType: boolean
+		lineageTag: 431cbef7-a8e5-5b03-bf37-b8f77a0051a3
+		summarizeBy: none
+		sourceColumn: LP_Leaseholds
+
+	column LP_Leaseholds_Amnt
+		dataType: double
+		lineageTag: b6a0e184-5cbe-5454-98ee-9a288c05bbc8
+		summarizeBy: none
+		sourceColumn: LP_Leaseholds_Amnt
+
+	column LP_Inventory
+		dataType: boolean
+		lineageTag: 18301e22-013e-542f-be91-ec6da4d68739
+		summarizeBy: none
+		sourceColumn: LP_Inventory
+
+	column LP_Inventory_Amnt
+		dataType: double
+		lineageTag: 29221a46-3576-5885-b54e-cccbd8997ed5
+		summarizeBy: none
+		sourceColumn: LP_Inventory_Amnt
+
+	column LP_BusinessPurchase
+		dataType: boolean
+		lineageTag: 49e32694-0ab3-5ce9-9254-94bde8dd96e6
+		summarizeBy: none
+		sourceColumn: LP_BusinessPurchase
+
+	column LP_BusinessPurchase_Amnt
+		dataType: double
+		lineageTag: 3c82ae46-eb97-5089-8893-0b23cad1be58
+		summarizeBy: none
+		sourceColumn: LP_BusinessPurchase_Amnt
+
+	column Equity_Amount
+		dataType: double
+		lineageTag: 43ab0c08-0766-574b-ae1a-1dac22297aef
+		summarizeBy: none
+		sourceColumn: Equity_Amount
+
+	column SecurityAmount
+		dataType: double
+		lineageTag: 9f496dc9-a9b7-55e3-82a6-627f37e63f4e
+		summarizeBy: none
+		sourceColumn: SecurityAmount
+
+	column LoanTerm
+		dataType: int64
+		lineageTag: 1c9a018d-9249-5e1a-8904-504a4bf8f09c
+		summarizeBy: none
+		sourceColumn: LoanTerm
+
+	column PrimeRate
+		dataType: double
+		lineageTag: 37b96e1c-8258-5fcf-9939-7cd8eb6aae3b
+		summarizeBy: none
+		sourceColumn: PrimeRate
+
+	column PrimeRatePlus
+		dataType: double
+		lineageTag: 4c28f81f-1f47-500d-828f-e3a436146ea0
+		summarizeBy: none
+		sourceColumn: PrimeRatePlus
+
+	column PaymentAmount
+		dataType: double
+		lineageTag: 8ba9f311-1e28-5a66-aaaf-351a9f420165
+		summarizeBy: none
+		sourceColumn: PaymentAmount
+
+	column FirstPmtDue
+		dataType: dateTime
+		lineageTag: b3d565bb-73e4-570d-a1cb-164ea989f6c1
+		summarizeBy: none
+		sourceColumn: FirstPmtDue
+
+	column LoanExpiryDate
+		dataType: dateTime
+		lineageTag: 180ba9c9-b7e8-51bb-babb-8570da4029a1
+		summarizeBy: none
+		sourceColumn: LoanExpiryDate
+
+	column AdminFee
+		dataType: double
+		lineageTag: d1280329-fc9a-5005-bb80-9b30dc1305eb
+		summarizeBy: none
+		sourceColumn: AdminFee
+
+	column DisbursalFirstAmount
+		dataType: double
+		lineageTag: 8cbd5c1f-b621-5247-832c-3f321efd98fc
+		summarizeBy: none
+		sourceColumn: DisbursalFirstAmount
+
+	column DisbursalSecondAmount
+		dataType: double
+		lineageTag: 8d264057-5a0f-5a8e-949b-307c16e7ab77
+		summarizeBy: none
+		sourceColumn: DisbursalSecondAmount
+
+	column DisbursalThirdAmount
+		dataType: double
+		lineageTag: 196261d0-2164-5672-8c06-a22ca3dff816
+		summarizeBy: none
+		sourceColumn: DisbursalThirdAmount
+
+	column SeasonalPayment
+		dataType: boolean
+		lineageTag: 9736ad11-1628-5200-98a9-6209737b8b89
+		summarizeBy: none
+		sourceColumn: SeasonalPayment
+
+	column eacloan
+		dataType: boolean
+		lineageTag: 497d7881-3e0b-5274-8f9e-6f52cf7b7092
+		summarizeBy: none
+		sourceColumn: eacloan
+
+	partition Loans = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"Loan_ID" = Int64.Type, #"LPrimary_ID" = Int64.Type, #"Loan_Number" = text, #"Input_Date" = date, #"Fund_Usage" = text, #"Purpose_of_Loan" = text, #"Loan_Amount_Approved" = number, #"LP_WorkingCapital" = logical, #"LP_WorkingCapital_Amnt" = number, #"LP_Equipment" = logical, #"LP_Equipment_Amnt" = number, #"LP_Leaseholds" = logical, #"LP_Leaseholds_Amnt" = number, #"LP_Inventory" = logical, #"LP_Inventory_Amnt" = number, #"LP_BusinessPurchase" = logical, #"LP_BusinessPurchase_Amnt" = number, #"Equity_Amount" = number, #"SecurityAmount" = number, #"LoanTerm" = Int64.Type, #"PrimeRate" = number, #"PrimeRatePlus" = number, #"PaymentAmount" = number, #"FirstPmtDue" = date, #"LoanExpiryDate" = date, #"AdminFee" = number, #"DisbursalFirstAmount" = number, #"DisbursalSecondAmount" = number, #"DisbursalThirdAmount" = number, #"SeasonalPayment" = logical, #"eacloan" = logical],
+			        {
+			                    {1, 101, "L-101-001", #date(2023,1,1), "Fund_Usage-1", "Purpose_of_Loan-1", 25000.0, false, 1000.0, true, 1000.0, false, 1000.0, true, 1000.0, false, 1000.0, 1000.0, 1000.0, 1, 1000.0, 1000.0, 650.0, #date(2023,1,1), #date(2023,1,1), 250.0, 1000.0, 1000.0, 1000.0, true, false},
+			                    {2, 102, "L-102-002", #date(2024,2,2), "Fund_Usage-2", "Purpose_of_Loan-2", 26234.0, true, 2234.0, false, 2234.0, false, 2234.0, false, 2234.0, false, 2234.0, 2234.0, 2234.0, 3, 2234.0, 2234.0, 1884.0, #date(2024,2,2), #date(2024,2,2), 1484.0, 2234.0, 2234.0, 2234.0, false, false},
+			                    {3, 103, "L-103-003", #date(2023,3,3), "Fund_Usage-3", "Purpose_of_Loan-3", 27468.0, false, 3468.0, false, 3468.0, true, 3468.0, false, 3468.0, true, 3468.0, 3468.0, 3468.0, 5, 3468.0, 3468.0, 3118.0, #date(2023,3,3), #date(2023,3,3), 2718.0, 3468.0, 3468.0, 3468.0, false, true},
+			                    {4, 104, "L-104-004", #date(2024,4,4), "Fund_Usage-4", "Purpose_of_Loan-4", 28702.0, false, 4702.0, true, 4702.0, false, 4702.0, true, 4702.0, false, 4702.0, 4702.0, 4702.0, 2, 4702.0, 4702.0, 4352.0, #date(2024,4,4), #date(2024,4,4), 3952.0, 4702.0, 4702.0, 4702.0, true, false},
+			                    {5, 105, "L-105-005", #date(2023,5,5), "Fund_Usage-5", "Purpose_of_Loan-5", 29936.0, true, 5936.0, false, 5936.0, false, 5936.0, false, 5936.0, false, 5936.0, 5936.0, 5936.0, 4, 5936.0, 5936.0, 5586.0, #date(2023,5,5), #date(2023,5,5), 5186.0, 5936.0, 5936.0, 5936.0, false, false},
+			                    {6, 106, "L-106-006", #date(2024,6,6), "Fund_Usage-6", "Purpose_of_Loan-6", 31170.0, false, 7170.0, false, 7170.0, true, 7170.0, false, 7170.0, true, 7170.0, 7170.0, 7170.0, 1, 7170.0, 7170.0, 6820.0, #date(2024,6,6), #date(2024,6,6), 6420.0, 7170.0, 7170.0, 7170.0, false, true},
+			                    {7, 107, "L-107-007", #date(2023,7,7), "Fund_Usage-7", "Purpose_of_Loan-7", 32404.0, false, 8404.0, true, 8404.0, false, 8404.0, true, 8404.0, false, 8404.0, 8404.0, 8404.0, 3, 8404.0, 8404.0, 8054.0, #date(2023,7,7), #date(2023,7,7), 7654.0, 8404.0, 8404.0, 8404.0, true, false},
+			                    {8, 108, "L-108-008", #date(2024,8,8), "Fund_Usage-8", "Purpose_of_Loan-8", 33638.0, true, 9638.0, false, 9638.0, false, 9638.0, false, 9638.0, false, 9638.0, 9638.0, 9638.0, 5, 9638.0, 9638.0, 9288.0, #date(2024,8,8), #date(2024,8,8), 8888.0, 9638.0, 9638.0, 9638.0, false, false}
+			        }
+			    )
+			in
+			    Source
+

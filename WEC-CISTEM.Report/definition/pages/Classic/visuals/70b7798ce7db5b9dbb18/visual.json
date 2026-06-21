@@ -1,0 +1,101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "70b7798ce7db5b9dbb18",
+  "position": {
+    "x": 8,
+    "y": 1650,
+    "z": 31,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 31
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdditionalEmails"
+                    }
+                  },
+                  "Property": "Name"
+                }
+              },
+              "queryRef": "AdditionalEmails.Name",
+              "nativeQueryRef": "Name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdditionalEmails"
+                    }
+                  },
+                  "Property": "Role"
+                }
+              },
+              "queryRef": "AdditionalEmails.Role",
+              "nativeQueryRef": "Role"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdditionalEmails"
+                    }
+                  },
+                  "Property": "EMail"
+                }
+              },
+              "queryRef": "AdditionalEmails.EMail",
+              "nativeQueryRef": "EMail"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AdditionalEmails"
+                    }
+                  },
+                  "Property": "Notes"
+                }
+              },
+              "queryRef": "AdditionalEmails.Notes",
+              "nativeQueryRef": "Notes"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Additional Emails'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

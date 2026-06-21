@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "3071c741e7a15aec91ad",
+  "position": {
+    "x": 8,
+    "y": 668,
+    "z": 12,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 12
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "MeetingNeeds"
+                }
+              },
+              "queryRef": "Impact.MeetingNeeds",
+              "nativeQueryRef": "MeetingNeeds"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Impact"
+                    }
+                  },
+                  "Property": "Accessible"
+                }
+              },
+              "queryRef": "Impact.Accessible",
+              "nativeQueryRef": "Accessible"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Satisfaction \u2013 cont.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

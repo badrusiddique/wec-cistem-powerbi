@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "50094a0240c15330b515",
+  "position": {
+    "x": 8,
+    "y": 630,
+    "z": 14,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 14
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PersonalProfiles"
+                    }
+                  },
+                  "Property": "Name"
+                }
+              },
+              "queryRef": "PersonalProfiles.Name",
+              "nativeQueryRef": "Name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PersonalProfiles"
+                    }
+                  },
+                  "Property": "Beacon"
+                }
+              },
+              "queryRef": "PersonalProfiles.Beacon",
+              "nativeQueryRef": "Beacon"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PersonalProfiles"
+                    }
+                  },
+                  "Property": "HomePhone"
+                }
+              },
+              "queryRef": "PersonalProfiles.HomePhone",
+              "nativeQueryRef": "HomePhone"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PersonalProfiles"
+                    }
+                  },
+                  "Property": "CellPhone"
+                }
+              },
+              "queryRef": "PersonalProfiles.CellPhone",
+              "nativeQueryRef": "CellPhone"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PersonalProfiles"
+                    }
+                  },
+                  "Property": "Email"
+                }
+              },
+              "queryRef": "PersonalProfiles.Email",
+              "nativeQueryRef": "Email"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Loan Profiles'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "60adfe528e385dac979f",
+  "position": {
+    "x": 8,
+    "y": 474,
+    "z": 10,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Disabled"
+                }
+              },
+              "queryRef": "Clients.Disabled",
+              "nativeQueryRef": "Disabled"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Visible_Minority"
+                }
+              },
+              "queryRef": "Clients.Visible_Minority",
+              "nativeQueryRef": "Visible_Minority"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Francophone"
+                }
+              },
+              "queryRef": "Clients.Francophone",
+              "nativeQueryRef": "Francophone"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Aboriginal"
+                }
+              },
+              "queryRef": "Clients.Aboriginal",
+              "nativeQueryRef": "Aboriginal"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "LGBTQIA2S"
+                }
+              },
+              "queryRef": "Clients.LGBTQIA2S",
+              "nativeQueryRef": "LGBTQIA2S"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Demographics & Age'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

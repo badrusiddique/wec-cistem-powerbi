@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "023a2a54aebc57588f1f",
+  "position": {
+    "x": 8,
+    "y": 808,
+    "z": 16,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 16
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PersonalProfiles"
+                    }
+                  },
+                  "Property": "PersonalCRA"
+                }
+              },
+              "queryRef": "PersonalProfiles.PersonalCRA",
+              "nativeQueryRef": "PersonalCRA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PersonalProfiles"
+                    }
+                  },
+                  "Property": "PersonalCRAAmount"
+                }
+              },
+              "queryRef": "PersonalProfiles.PersonalCRAAmount",
+              "nativeQueryRef": "PersonalCRAAmount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PersonalProfiles"
+                    }
+                  },
+                  "Property": "FLG"
+                }
+              },
+              "queryRef": "PersonalProfiles.FLG",
+              "nativeQueryRef": "FLG"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PersonalProfiles"
+                    }
+                  },
+                  "Property": "LLG"
+                }
+              },
+              "queryRef": "PersonalProfiles.LLG",
+              "nativeQueryRef": "LLG"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "PersonalProfiles"
+                    }
+                  },
+                  "Property": "Director"
+                }
+              },
+              "queryRef": "PersonalProfiles.Director",
+              "nativeQueryRef": "Director"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Profile CRA'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

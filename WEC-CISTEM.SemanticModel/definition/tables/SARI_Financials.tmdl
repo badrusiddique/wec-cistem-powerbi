@@ -1,0 +1,85 @@
+table SARI_Financials
+	lineageTag: 4a6223c6-0ed2-5c4c-8009-d0354ef6c56f
+
+	column ID
+		dataType: int64
+		isHidden
+		lineageTag: 703e7765-44e5-561b-a739-7b712dedd3b5
+		summarizeBy: none
+		sourceColumn: ID
+
+	column Primary_ID
+		dataType: int64
+		isHidden
+		lineageTag: 836d2e87-460d-5f67-953c-94e7baffa6ab
+		summarizeBy: none
+		sourceColumn: Primary_ID
+
+	column RptDate
+		dataType: dateTime
+		lineageTag: 3c27715f-02dd-500b-88de-6dddfa7f5b94
+		summarizeBy: none
+		sourceColumn: RptDate
+
+	column Revenue
+		dataType: double
+		lineageTag: a50b705b-9afb-583a-a904-ce157472f536
+		summarizeBy: none
+		sourceColumn: Revenue
+
+	column COGS
+		dataType: double
+		lineageTag: caa489be-e938-5ea5-b7cf-5f49fb6d02c3
+		summarizeBy: none
+		sourceColumn: COGS
+
+	column Expenses
+		dataType: double
+		lineageTag: 22ad9b4a-c524-53ff-b176-720d2ee06e28
+		summarizeBy: none
+		sourceColumn: Expenses
+
+	column Assets
+		dataType: double
+		lineageTag: 41fbe86a-b968-5c8f-ba6e-bf9aafc36583
+		summarizeBy: none
+		sourceColumn: Assets
+
+	column Liabilities
+		dataType: double
+		lineageTag: bac5369a-36ca-54f7-b7dc-fddd503aafcc
+		summarizeBy: none
+		sourceColumn: Liabilities
+
+	column AssessDate
+		dataType: dateTime
+		lineageTag: 5aa195ed-6371-5b46-b9cd-33f022dd50e5
+		summarizeBy: none
+		sourceColumn: AssessDate
+
+	column Notes
+		dataType: string
+		lineageTag: 95b823c4-e4aa-5d09-8093-1d0704551611
+		summarizeBy: none
+		sourceColumn: Notes
+
+	partition SARI_Financials = m
+		mode: import
+		source =
+			let
+			    Source = #table(
+			        type table [#"ID" = Int64.Type, #"Primary_ID" = Int64.Type, #"RptDate" = date, #"Revenue" = number, #"COGS" = number, #"Expenses" = number, #"Assets" = number, #"Liabilities" = number, #"AssessDate" = date, #"Notes" = text],
+			        {
+			                    {1, 101, #date(2023,1,1), 80000.0, 30000.0, 55000.0, 120000.0, 40000.0, #date(2023,1,1), "Sample note 1"},
+			                    {2, 102, #date(2024,2,2), 81234.0, 31234.0, 56234.0, 121234.0, 41234.0, #date(2024,2,2), "Sample note 2"},
+			                    {3, 103, #date(2023,3,3), 82468.0, 32468.0, 57468.0, 122468.0, 42468.0, #date(2023,3,3), "Sample note 3"},
+			                    {4, 104, #date(2024,4,4), 83702.0, 33702.0, 58702.0, 123702.0, 43702.0, #date(2024,4,4), "Sample note 4"},
+			                    {5, 105, #date(2023,5,5), 84936.0, 34936.0, 59936.0, 124936.0, 44936.0, #date(2023,5,5), "Sample note 5"},
+			                    {6, 106, #date(2024,6,6), 86170.0, 36170.0, 61170.0, 126170.0, 46170.0, #date(2024,6,6), "Sample note 6"},
+			                    {7, 107, #date(2023,7,7), 87404.0, 37404.0, 62404.0, 127404.0, 47404.0, #date(2023,7,7), "Sample note 7"},
+			                    {8, 108, #date(2024,8,8), 88638.0, 38638.0, 63638.0, 128638.0, 48638.0, #date(2024,8,8), "Sample note 8"}
+			        }
+			    )
+			in
+			    Source
+

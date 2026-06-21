@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "8c711e063aa95ab1a60f",
+  "position": {
+    "x": 8,
+    "y": 736,
+    "z": 16,
+    "width": 414,
+    "height": 96,
+    "tabOrder": 16
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Commercial_Beacon"
+                }
+              },
+              "queryRef": "Clients.Commercial_Beacon",
+              "nativeQueryRef": "Commercial_Beacon"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Commercial Beacon'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "02c6b3746a3155e8b09f",
+  "position": {
+    "x": 8,
+    "y": 948,
+    "z": 19,
+    "width": 627,
+    "height": 96,
+    "tabOrder": 19
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Industry"
+                }
+              },
+              "queryRef": "Clients.Industry",
+              "nativeQueryRef": "Industry"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "C3_Industry"
+                }
+              },
+              "queryRef": "Clients.C3_Industry",
+              "nativeQueryRef": "C3_Industry"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Business_Sector"
+                }
+              },
+              "queryRef": "Clients.Business_Sector",
+              "nativeQueryRef": "Business_Sector"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Business_Description"
+                }
+              },
+              "queryRef": "Clients.Business_Description",
+              "nativeQueryRef": "Business_Description"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Clients"
+                    }
+                  },
+                  "Property": "Tourism_Operator"
+                }
+              },
+              "queryRef": "Clients.Tourism_Operator",
+              "nativeQueryRef": "Tourism_Operator"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Industry / Business'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "b718e018644253f89eaa",
+  "position": {
+    "x": 8,
+    "y": 262,
+    "z": 6,
+    "width": 627,
+    "height": 168,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MentorMatches"
+                    }
+                  },
+                  "Property": "ActiveMentxx"
+                }
+              },
+              "queryRef": "MentorMatches.ActiveMentxx",
+              "nativeQueryRef": "ActiveMentxx"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MentorMatches"
+                    }
+                  },
+                  "Property": "skillset"
+                }
+              },
+              "queryRef": "MentorMatches.skillset",
+              "nativeQueryRef": "skillset"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MentorMatches"
+                    }
+                  },
+                  "Property": "skill1"
+                }
+              },
+              "queryRef": "MentorMatches.skill1",
+              "nativeQueryRef": "skill1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MentorMatches"
+                    }
+                  },
+                  "Property": "skill2"
+                }
+              },
+              "queryRef": "MentorMatches.skill2",
+              "nativeQueryRef": "skill2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "MentorMatches"
+                    }
+                  },
+                  "Property": "skill3"
+                }
+              },
+              "queryRef": "MentorMatches.skill3",
+              "nativeQueryRef": "skill3"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Mentor Match'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

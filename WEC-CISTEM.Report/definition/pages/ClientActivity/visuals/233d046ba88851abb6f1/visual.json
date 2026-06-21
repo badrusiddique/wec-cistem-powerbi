@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "233d046ba88851abb6f1",
+  "position": {
+    "x": 8,
+    "y": 440,
+    "z": 9,
+    "width": 414,
+    "height": 168,
+    "tabOrder": 9
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "ClientServices.Date",
+              "nativeQueryRef": "Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Contact_Type"
+                }
+              },
+              "queryRef": "ClientServices.Contact_Type",
+              "nativeQueryRef": "Contact_Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ClientServices"
+                    }
+                  },
+                  "Property": "Info_Given"
+                }
+              },
+              "queryRef": "ClientServices.Info_Given",
+              "nativeQueryRef": "Info_Given"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Service Activity'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
